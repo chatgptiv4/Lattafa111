@@ -154,3 +154,13 @@
     align-items: center;
     font-weight: bold;
 }
+
+/* Hide User Account Elements */
+a[href*="/account"],
+a[href*="/login"],
+.icon-user,
+.fa-user,
+.header__icon--account,
+.localization-form__currency {
+    display: none !important;
+}

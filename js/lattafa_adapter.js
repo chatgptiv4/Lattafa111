@@ -1,6 +1,56 @@
 document.addEventListener('DOMContentLoaded', () => {
     console.log("Lattafa Adapter Loaded");
 
+    // Remove User Account Elements (Aggressive)
+    function removeUserElements() {
+        // 1. Specific Selectors
+        const selectors = [
+            'a[href*="/account"]',
+            'a[href*="/login"]',
+            'a[href*="shopify.com/authentication"]',
+            '.icon-user',
+            '.fa-user',
+            '.header__icon--account',
+            '.localization-form__currency'
+        ];
+
+        selectors.forEach(selector => {
+            const elements = document.querySelectorAll(selector);
+            elements.forEach(el => el.remove());
+        });
+
+        // 2. SVG-based detection (if classes are missing)
+        // Look for SVGs that might be the user icon by checking common path data or parent links
+        const svgs = document.querySelectorAll('svg');
+        svgs.forEach(svg => {
+            // Check if it's inside a link
+            const link = svg.closest('a');
+            if (link) {
+                const href = link.getAttribute('href') || '';
+                // If link goes to account or login, OR if it's a specific Shopify auth link
+                if (href.includes('account') || href.includes('login') || href.includes('authentication')) {
+                    link.remove(); // Remove the whole link
+                }
+            }
+        });
+
+        // 3. Fallback: Search by "visual" or "aria" labels if possible (optional but good)
+        // This targets the specific icon the user sees if it has "Log in" or similar text
+        const links = document.querySelectorAll('a');
+        links.forEach(a => {
+            if (a.innerText.includes('Log in') || a.innerText.includes('Sign in') || a.getAttribute('aria-label')?.includes('Log in')) {
+                a.remove();
+            }
+        });
+    }
+
+    // Run multiple times to catch delayed rendering
+    removeUserElements();
+    window.addEventListener('load', removeUserElements);
+    setInterval(removeUserElements, 1000); // Poll every second just in case
+
+
+
     // Handle data-link attributes for summary and other elements
     document.addEventListener('click', (e) => {
         const target = e.target.closest('[data-link]');
