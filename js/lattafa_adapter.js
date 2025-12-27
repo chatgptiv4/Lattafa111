@@ -50,6 +50,26 @@ document.addEventListener('DOMContentLoaded', () => {
     setInterval(removeUserElements, 1000); // Poll every second just in case
 
 
+    // Update "Shop All" Link
+    function updateShopAllLink() {
+        const links = document.querySelectorAll('a');
+        links.forEach(a => {
+            const text = a.innerText.trim().toUpperCase();
+            if (text === 'SHOP ALL' || text === 'SHOP') {
+                // Check if it's likely the main nav link (not a footer link perhaps? Or maybe all of them?)
+                // User said "Under this Shop All", implying a specific one or the main one.
+                // Safest to update all primary navigation ones, or just all of them if they are generic.
+                // Let's check if it creates issues. Usually "Shop All" goes to collection.
+                // We'll update it to gift-sets.html.
+                a.href = 'gift-sets.html';
+            }
+        });
+    }
+    updateShopAllLink();
+    window.addEventListener('load', updateShopAllLink);
+
+
+
 
     // Handle data-link attributes for summary and other elements
     document.addEventListener('click', (e) => {
