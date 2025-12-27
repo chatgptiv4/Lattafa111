@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oud Mood Elixir | Lattafa USA</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/component-custom-card.css">
+    <link rel="icon" type="image/png"
+        href="//www.lattafa-usa.com/cdn/shop/files/favicon.png?crop=center&height=32&v=1746472383&width=32">
+
+    <style>
+        /* Product Page Specific Styles */
+        .product-page {
+            padding-top: 40px;
+            padding-bottom: 80px;
+        }
+
+        .product-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .product-layout {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+
+        .product-gallery {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .main-image {
+            width: 100%;
+            border-radius: 8px;
+            overflow: hidden;
+            background: #f7f7f7;
+        }
+
+        .main-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .thumbnails {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+        }
+
+        .thumbnail {
+            width: 80px;
+            height: 80px;
+            border-radius: 4px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            overflow: hidden;
+        }
+
+        .thumbnail.active {
+            border-color: #000;
+        }
+
+        .thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .product-info h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+        }
+
+        .product-price {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .price-regular {
+            color: #000;
+        }
+
+        .product-description {
+            margin-bottom: 30px;
+            line-height: 1.6;
+            color: #444;
+        }
+
+        .product-description p {
+            margin-bottom: 15px;
+        }
+
+        .add-to-cart-btn {
+            width: 100%;
+            padding: 15px;
+            background: #000;
+            color: #fff;
+            border: none;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .add-to-cart-btn:hover {
+            background: #333;
+        }
+
+        .breadcrumb {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .breadcrumb a {
+            color: #666;
+            text-decoration: none;
+        }
+
+        .breadcrumb span {
+            color: #000;
+        }
+    </style>
+<link rel="stylesheet" href="/css/adapter.css">
+</head>
+
+<body>
+    <!-- Header (simplified from index.html) -->
+    <header class="header-wrapper" style="padding: 20px 0; border-bottom: 1px solid #eee;">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <a href="/index.html" class="header__heading-link">
+                <img src="//www.lattafa-usa.com/cdn/shop/files/logo-lattafa.png?v=1753930394" alt="Lattafa" width="150">
+            </a>
+            <nav>
+                <a href="/index.html" style="margin-left: 20px; text-decoration: none; color: #000;">Home</a>
+                <a href="/shop-all.html" style="margin-left: 20px; text-decoration: none; color: #000;">Shop All</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="product-page">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="/index.html">Home</a> / <a href="/shop-all.html">Products</a> / <span>Oud Mood Elixir</span>
+            </div>
+
+            <div class="product-layout">
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img id="mainImage" src="/assets/products/oud-mood-elixir/0.jpg" alt="Oud Mood Elixir">
+                    </div>
+                    <div class="thumbnails">
+                        <div class='thumbnail active' onclick='changeImage("/assets/products/oud-mood-elixir/0.jpg", this)'><img src='/assets/products/oud-mood-elixir/0.jpg' alt='Oud Mood Elixir'></div><div class='thumbnail ' onclick='changeImage("/assets/products/oud-mood-elixir/1.jpg", this)'><img src='/assets/products/oud-mood-elixir/1.jpg' alt='Oud Mood Elixir'></div><div class='thumbnail ' onclick='changeImage("/assets/products/oud-mood-elixir/2.jpg", this)'><img src='/assets/products/oud-mood-elixir/2.jpg' alt='Oud Mood Elixir'></div><div class='thumbnail ' onclick='changeImage("/assets/products/oud-mood-elixir/3.jpg", this)'><img src='/assets/products/oud-mood-elixir/3.jpg' alt='Oud Mood Elixir'></div>
+                    </div>
+                </div>
+
+                <div class="product-info">
+                    <h1 class="product__title">Oud Mood Elixir</h1>
+
+                    <div class="product-price">
+                        <span class="price-regular">$29.99 USD</span>
+                    </div>
+
+                    <div class="product-description">
+                        <div class="descnew"><p>Perfume Oud Mood Elixir Eau de Parfum by Lattafa Perfumes is an oriental fragrance with Oudh, saffron and spices. The top note begins with a spicy appearance of saffron, cinnamon and nutmeg, with nutmeg playing the leading role. Woody notes in the heart note are spread by Oudh and sandalwood, accompanied by suede. 
+The vanilla and amber base completes the perfume calmly and fully. A true oriental perfume, wonderfully spicy and woody with animal and slightly sweet notes! A unisex perfume with a masculine touch.</p></div><div class="notesfinal"><p><strong>Top Notes</strong><br>Saffron, Nutmeg, Cinnamon</p></div>
+
+<div class="notesfinal"><p><strong>Middle Notes</strong><br>Agarwood (Oud), Suede, Sandalwood</p></div>
+<div class="notesfinal"><p><strong>Base Notes</strong><br>Amber, Vanilla</p></div>
+                    </div>
+
+                    <form action="/cart/add" method="post">
+                        <input type="hidden" name="id" value="46981621481695">
+                        <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer same as index.html -->
+    <footer style="background: #f7f7f7; padding: 50px 0; margin-top: 50px; text-align: center;">
+        <div class="container">
+            <p>&copy; 2024 Lattafa USA. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple gallery script
+        function changeImage(src, element) {
+            document.getElementById('mainImage').src = src;
+            document.querySelectorAll('.thumbnail').forEach(el => el.classList.remove('active'));
+            element.classList.add('active');
+        }
+    </script>
+<script src="/js/lattafa_adapter.js"></script>
+<script src="../js/lattafa_search.js"></script>
+</body>
+
+</html>
+
