@@ -97,7 +97,46 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         try {
-            const response = await fetch('http://localhost:4242/create-checkout-session', {
+            // Determine API URL based on environment
+            const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+            // If local, assume running separate backend on 4242. If production, use relative API path.
+            // But wait, if they use 'vercel dev' locally, relative path also works. 
+            // We'll prioritize relative path if we suspect we are on valid domain, but keep localhost:4242 fallback for specific local setup.
+
+            let apiUrl = '/api/create-checkout-session';
+            if (isLocal && window.location.port !== '3000') {
+                // Assumption: If on localhost and NOT standard Vercel port, maybe just static HTML opening or LiveServer
+                // Try the specific backend port if the relative one fails? 
+                // Actually, let's try relative first, if it fails then we can't really fallback easily in one request without complexity.
+                // Let's stick to a robust simple check:
+                // If we are on the Vercel deployment (or similar), use relative.
+                // If we are strictly on localhost, we might be using node server.js.
+            }
+
+            // Simplified approach: Use full URL if localhost to hit port 4242, else relative
+            if (isLocal) {
+                // Try to detect if we are served by the node server itself? No easy way.
+                // Let's use the relative path as default for Vercel, and if it fails, the user gets the error.
+                // BUT, user specifically had issue with localhost:4242 hardcoded.
+                // We will change it to relative path for Vercel support.
+                apiUrl = '/api/create-checkout-session';
+
+                // However, for the user's local "node server.js" workflow, that server runs on 4242.
+                // If the frontend is also served by that server (port 4242), then relative path works!
+                // If frontend is Live Server (port 5500), relative path '/api/...' hits port 5500 which is 404.
+
+                if (window.location.port !== '4242' && window.location.port !== '') {
+                    // Likely Live Server or similar
+                    apiUrl = 'http://localhost:4242/create-checkout-session';
+                }
+            }
+
+            // Override for production to ALWAYS use relative, just in case
+            if (!isLocal) {
+                apiUrl = '/api/create-checkout-session';
+            }
+
+            const response = await fetch(apiUrl, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ items: cart }),
