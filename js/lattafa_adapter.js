@@ -252,6 +252,19 @@ document.addEventListener('DOMContentLoaded', () => {
     // --------------------------------
 
     // 4. Inject "Add to Cart" Buttons into Product Cards
+    const PRIORITY_PRODUCTS = [
+        "asad", "yara", "qaed al fursan", "badee al oud noble blush",
+        "khamrah", "choco overdose", "berry on top", "vanilla freak",
+        "cookie crave", "whipped pleasure"
+    ];
+
+    function isSoldOut(name) {
+        if (!name) return true;
+        const lowerName = name.toLowerCase();
+        // Return TRUE (Sold Out) if the name does NOT contain any of the priority keywords
+        return !PRIORITY_PRODUCTS.some(keyword => lowerName.includes(keyword));
+    }
+
     function injectAddToCartButtons() {
         const products = document.querySelectorAll('.product-card:not(.buttons-injected)');
         products.forEach(card => {
@@ -275,7 +288,17 @@ document.addEventListener('DOMContentLoaded', () => {
             if (titleEl) {
                 const btn = document.createElement('button');
                 btn.className = 'btn-lattafa-add';
-                btn.innerText = 'Add to Cart';
+                const prodName = titleEl.innerText.trim();
+
+                if (isSoldOut(prodName)) {
+                    btn.innerText = 'Sold Out';
+                    btn.disabled = true;
+                    btn.style.backgroundColor = '#ccc';
+                    btn.style.cursor = 'not-allowed';
+                    btn.style.opacity = '0.7';
+                } else {
+                    btn.innerText = 'Add to Cart';
+                }
 
                 // Layout: Insert after price info or at the end of info div
                 const infoDiv = card.querySelector('.product-card__info') ||
