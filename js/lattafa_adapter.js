@@ -263,7 +263,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 card.querySelector('.h3 a') ||
                 card.querySelector('h3');
 
-            const priceEl = card.querySelector('.f-price-item--regular') ||
+            const priceEl = card.querySelector('.price-new') ||
+                card.querySelector('.f-price-item--sale') ||
+                card.querySelector('.f-price-item--regular') ||
                 card.querySelector('.f-price-item') ||
                 card.querySelector('.price-item--regular');
 
@@ -316,7 +318,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 // scrape details from page
                 const titleEl = document.querySelector('h1.product__title');
-                const priceEl = document.querySelector('.product-price .price-regular');
+                const priceEl = document.querySelector('.product-price-container .price-new') || document.querySelector('.product-price .price-regular');
                 const imgEl = document.querySelector('#mainImage');
 
                 if (titleEl && priceEl) {
