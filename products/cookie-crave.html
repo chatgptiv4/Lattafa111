@@ -134,7 +134,7 @@
             color: #000;
         }
     </style>
-<link rel="stylesheet" href="/css/adapter.css">
+    <link rel="stylesheet" href="/css/adapter.css">
 </head>
 
 <body>
@@ -162,28 +162,37 @@
                     <div class="main-image">
                         <img id="mainImage" src="/assets/products/cookie-crave/0.jpg" alt="Cookie Crave">
                     </div>
-                    <div class="thumbnails">
-                        <div class='thumbnail active' onclick='changeImage("/assets/products/cookie-crave/0.jpg", this)'><img src='/assets/products/cookie-crave/0.jpg' alt='Cookie Crave'></div><div class='thumbnail ' onclick='changeImage("/assets/products/cookie-crave/1.jpg", this)'><img src='/assets/products/cookie-crave/1.jpg' alt='Cookie Crave'></div><div class='thumbnail ' onclick='changeImage("/assets/products/cookie-crave/2.jpg", this)'><img src='/assets/products/cookie-crave/2.jpg' alt='Cookie Crave'></div>
+                    <div class="thumbnails"><div class="thumbnail active" onclick='changeImage("/assets/products/cookie-crave/0.jpg", this)'><img src="/assets/products/cookie-crave/0.jpg" alt="Cookie Crave"></div><div class="thumbnail" onclick='changeImage("/assets/products/cookie-crave/1.jpg", this)'><img src="/assets/products/cookie-crave/1.jpg" alt="Cookie Crave"></div><div class="thumbnail" onclick='changeImage("/assets/products/cookie-crave/2.jpg", this)'><img src="/assets/products/cookie-crave/2.jpg" alt="Cookie Crave"></div></div>
+                        <div class='thumbnail ' onclick='changeImage("/assets/products/cookie-crave/1.jpg", this)'><img
+                                src='/assets/products/cookie-crave/1.jpg' alt='Cookie Crave'></div>
                     </div>
                 </div>
 
                 <div class="product-info">
                     <h1 class="product__title">Cookie Crave</h1>
 
-                    <div class="product-price">
-                        <span class="price-regular">$59.99 USD</span>
+                    <div class="product-price-container">
+                        <span class="discount-badge">-24%</span>
+                        <span class="price-new">$59.00</span>
+                        <span class="price-old">$59.00</span>
+                        <span class="price-info-icon" title="Info">ⓘ</span>
                     </div>
 
                     <div class="product-description">
-                        <div class="descnew">Cookie Crave by Lattafa offers a unique gourmand fragrance experience in a convenient 75ml spray bottle. This scent blends indulgent notes reminiscent of freshly baked cookies, creating a warm and inviting aroma. Ideal for those who appreciate sweet, comforting fragrances, Cookie Crave delivers lasting wear with a balanced composition that is both cozy and sophisticated. Perfect for daily use, it enhances your presence with <strong>subtle sweetness and a refined touch.</strong>
-</div>
-<p><strong>Top Notes: </strong>Cocoa butter</p>
-<p><strong>Middle Notes:</strong> Cookie, Sugar, Milk</p>
-<p><strong>Base Notes:</strong> Vanilla, Whipped Cream, Sandalwood</p>
-                    </div>
+                        <div class="descnew"><p>Lattafa Cookie Crave is a warm, irresistible gourmand fragrance that evokes the feeling of stepping into a warm bakery.</p></div>
+                        
+                        <div class="notesfinal">
+                            <p><strong>Top Notes</strong><br>Butter, Cocoa</p>
+                        </div>
+                        <div class="notesfinal">
+                            <p><strong>Middle Notes</strong><br>Cookie, Milk, Sugar</p>
+                        </div>
+                        <div class="notesfinal">
+                            <p><strong>Base Notes</strong><br>Vanilla, Whipped Cream, Sandalwood</p>
+                        </div></div>
 
                     <form action="/cart/add" method="post">
-                        <input type="hidden" name="id" value="47376504553695">
+                        <input type="hidden" name="id" value="46981611356383">
                         <button type="submit" class="add-to-cart-btn">Add to Cart</button>
                     </form>
                 </div>
@@ -206,9 +215,8 @@
             element.classList.add('active');
         }
     </script>
-<script src="/js/lattafa_adapter.js"></script>
-<script src="../js/lattafa_search.js"></script>
+    <script src="/js/lattafa_adapter.js"></script>
+    <script src="../js/lattafa_search.js"></script>
 </body>
 
 </html>
-

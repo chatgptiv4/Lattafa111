@@ -134,7 +134,7 @@
             color: #000;
         }
     </style>
-<link rel="stylesheet" href="/css/adapter.css">
+    <link rel="stylesheet" href="/css/adapter.css">
 </head>
 
 <body>
@@ -162,30 +162,37 @@
                     <div class="main-image">
                         <img id="mainImage" src="/assets/products/berry-on-top/0.jpg" alt="Berry on Top">
                     </div>
-                    <div class="thumbnails">
-                        <div class='thumbnail active' onclick='changeImage("/assets/products/berry-on-top/0.jpg", this)'><img src='/assets/products/berry-on-top/0.jpg' alt='Berry on Top'></div><div class='thumbnail ' onclick='changeImage("/assets/products/berry-on-top/1.jpg", this)'><img src='/assets/products/berry-on-top/1.jpg' alt='Berry on Top'></div><div class='thumbnail ' onclick='changeImage("/assets/products/berry-on-top/2.jpg", this)'><img src='/assets/products/berry-on-top/2.jpg' alt='Berry on Top'></div>
+                    <div class="thumbnails"><div class="thumbnail active" onclick='changeImage("/assets/products/berry-on-top/0.jpg", this)'><img src="/assets/products/berry-on-top/0.jpg" alt="Berry on Top"></div><div class="thumbnail" onclick='changeImage("/assets/products/berry-on-top/1.jpg", this)'><img src="/assets/products/berry-on-top/1.jpg" alt="Berry on Top"></div><div class="thumbnail" onclick='changeImage("/assets/products/berry-on-top/2.jpg", this)'><img src="/assets/products/berry-on-top/2.jpg" alt="Berry on Top"></div></div>
+                        <div class='thumbnail ' onclick='changeImage("/assets/products/berry-on-top/1.jpg", this)'><img
+                                src='/assets/products/berry-on-top/1.jpg' alt='Berry on Top'></div>
                     </div>
                 </div>
 
                 <div class="product-info">
                     <h1 class="product__title">Berry on Top</h1>
 
-                    <div class="product-price">
-                        <span class="price-regular">$59.99 USD</span>
+                    <div class="product-price-container">
+                        <span class="discount-badge">-24%</span>
+                        <span class="price-new">$59.00</span>
+                        <span class="price-old">$59.00</span>
+                        <span class="price-info-icon" title="Info">ⓘ</span>
                     </div>
 
                     <div class="product-description">
-                        <div class="descnew">Berry on Top Eau de Parfum from the Lattafa Gourmand Collection offers a sophisticated fragrance experience in a 75ml spray. This expertly crafted scent balances luscious berry notes with subtle gourmand nuances, delivering a rich and inviting aroma that lingers throughout the day. Ideal for those seeking a refined fragrance with a vibrant yet elegant character, Berry on Top enhances your presence with its expertly blended composition. Its convenient spray bottle ensures easy, controlled application for everyday wear.</div>
-<div class="notesfinal">
-<strong>Top Notes:</strong> Strawberry, Chantilly Cream</div>
-<div class="notesfinal">
-<strong>Middle Notes: </strong>Cooked Sugar, Strawberry Jam, White Flowers</div>
-<div class="notesfinal">
-<strong>Base Notes:</strong> Musk, Vanilla</div>
-                    </div>
+                        <div class="descnew"><p>Lattafa's Berry on Top is a floral fruity gourmand scent, designed to be playful yet elegant, celebrating the irresistible sweetness of strawberries.</p></div>
+                        
+                        <div class="notesfinal">
+                            <p><strong>Top Notes</strong><br>Strawberry, Chantilly Cream</p>
+                        </div>
+                        <div class="notesfinal">
+                            <p><strong>Middle Notes</strong><br>Cooked Sugar, Strawberry Jam, White Flowers</p>
+                        </div>
+                        <div class="notesfinal">
+                            <p><strong>Base Notes</strong><br>Musk, Vanilla</p>
+                        </div></div>
 
                     <form action="/cart/add" method="post">
-                        <input type="hidden" name="id" value="47376550789343">
+                        <input type="hidden" name="id" value="46981611356383">
                         <button type="submit" class="add-to-cart-btn">Add to Cart</button>
                     </form>
                 </div>
@@ -208,9 +215,8 @@
             element.classList.add('active');
         }
     </script>
-<script src="/js/lattafa_adapter.js"></script>
-<script src="../js/lattafa_search.js"></script>
+    <script src="/js/lattafa_adapter.js"></script>
+    <script src="../js/lattafa_search.js"></script>
 </body>
 
 </html>
-

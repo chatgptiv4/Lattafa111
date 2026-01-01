@@ -134,7 +134,7 @@
             color: #000;
         }
     </style>
-<link rel="stylesheet" href="/css/adapter.css">
+    <link rel="stylesheet" href="/css/adapter.css">
 </head>
 
 <body>
@@ -162,30 +162,37 @@
                     <div class="main-image">
                         <img id="mainImage" src="/assets/products/whipped-pleasure/0.jpg" alt="Whipped Pleasure">
                     </div>
-                    <div class="thumbnails">
-                        <div class='thumbnail active' onclick='changeImage("/assets/products/whipped-pleasure/0.jpg", this)'><img src='/assets/products/whipped-pleasure/0.jpg' alt='Whipped Pleasure'></div><div class='thumbnail ' onclick='changeImage("/assets/products/whipped-pleasure/1.jpg", this)'><img src='/assets/products/whipped-pleasure/1.jpg' alt='Whipped Pleasure'></div><div class='thumbnail ' onclick='changeImage("/assets/products/whipped-pleasure/2.jpg", this)'><img src='/assets/products/whipped-pleasure/2.jpg' alt='Whipped Pleasure'></div>
+                    <div class="thumbnails"><div class="thumbnail active" onclick='changeImage("/assets/products/whipped-pleasure/0.jpg", this)'><img src="/assets/products/whipped-pleasure/0.jpg" alt="Whipped Pleasure"></div><div class="thumbnail" onclick='changeImage("/assets/products/whipped-pleasure/1.jpg", this)'><img src="/assets/products/whipped-pleasure/1.jpg" alt="Whipped Pleasure"></div><div class="thumbnail" onclick='changeImage("/assets/products/whipped-pleasure/2.jpg", this)'><img src="/assets/products/whipped-pleasure/2.jpg" alt="Whipped Pleasure"></div></div>
+                        <div class='thumbnail ' onclick='changeImage("/assets/products/whipped-pleasure/1.jpg", this)'><img
+                                src='/assets/products/whipped-pleasure/1.jpg' alt='Whipped Pleasure'></div>
                     </div>
                 </div>
 
                 <div class="product-info">
                     <h1 class="product__title">Whipped Pleasure</h1>
 
-                    <div class="product-price">
-                        <span class="price-regular">$59.99 USD</span>
+                    <div class="product-price-container">
+                        <span class="discount-badge">-24%</span>
+                        <span class="price-new">$59.00</span>
+                        <span class="price-old">$59.00</span>
+                        <span class="price-info-icon" title="Info">ⓘ</span>
                     </div>
 
                     <div class="product-description">
-                        <div class="descnew">Experience the indulgent essence of Lattafa Give Me Gourmand Collection Whipped Pleasure EDP. This 75ML spray masterfully blends rich whipped cream and smooth caramel notes, creating a luxurious gourmand fragrance. Designed for those who appreciate refined sweetness, it offers a warm, creamy scent that captivates and delights throughout the day. Perfect for adding a touch of sophisticated comfort to any occasion.</div>
-<div class="notesfinal">
-<strong>Top Notes:</strong> Caramel Popcorn, Salted Caramel</div>
-<div class="notesfinal">
-<strong>Middle Notes :</strong> Jasmine, Milk</div>
-<div class="notesfinal">
-<strong>Base Notes :</strong> Tonka, Benzoin, Musk, Ambrofix</div>
-                    </div>
+                        <div class="descnew"><p>Lattafa Whipped Pleasure is a decadent gourmand fragrance with a sensual twist, designed for those who appreciate refined sweetness and dessert-like perfumes.</p></div>
+                        
+                        <div class="notesfinal">
+                            <p><strong>Top Notes</strong><br>Caramel Popcorn, Caramel, Salted Caramel</p>
+                        </div>
+                        <div class="notesfinal">
+                            <p><strong>Middle Notes</strong><br>Creamy Milk, Jasmine</p>
+                        </div>
+                        <div class="notesfinal">
+                            <p><strong>Base Notes</strong><br>Tonka Bean, Musk, Benzoin, Ambrofix</p>
+                        </div></div>
 
                     <form action="/cart/add" method="post">
-                        <input type="hidden" name="id" value="47376541417695">
+                        <input type="hidden" name="id" value="46981611356383">
                         <button type="submit" class="add-to-cart-btn">Add to Cart</button>
                     </form>
                 </div>
@@ -208,9 +215,8 @@
             element.classList.add('active');
         }
     </script>
-<script src="/js/lattafa_adapter.js"></script>
-<script src="../js/lattafa_search.js"></script>
+    <script src="/js/lattafa_adapter.js"></script>
+    <script src="../js/lattafa_search.js"></script>
 </body>
 
 </html>
-

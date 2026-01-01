@@ -134,7 +134,7 @@
             color: #000;
         }
     </style>
-<link rel="stylesheet" href="/css/adapter.css">
+    <link rel="stylesheet" href="/css/adapter.css">
 </head>
 
 <body>
@@ -163,34 +163,51 @@
                         <img id="mainImage" src="/assets/products/asad/0.jpg" alt="Asad">
                     </div>
                     <div class="thumbnails">
-                        <div class='thumbnail active' onclick='changeImage("/assets/products/asad/0.jpg", this)'><img src='/assets/products/asad/0.jpg' alt='Asad'></div><div class='thumbnail ' onclick='changeImage("/assets/products/asad/1.jpg", this)'><img src='/assets/products/asad/1.jpg' alt='Asad'></div>
+                        <div class='thumbnail active' onclick='changeImage("/assets/products/asad/0.jpg", this)'><img
+                                src='/assets/products/asad/0.jpg' alt='Asad'></div>
+                        <div class='thumbnail ' onclick='changeImage("/assets/products/asad/1.jpg", this)'><img
+                                src='/assets/products/asad/1.jpg' alt='Asad'></div>
                     </div>
                 </div>
 
                 <div class="product-info">
                     <h1 class="product__title">Asad</h1>
 
-                    <div class="product-price">
-                        <span class="price-regular">$14.99 USD</span>
+                    <div class="product-price-container">
+                        <span class="discount-badge">-38%</span>
+                        <span class="price-new">$28.00</span>
+                        <span class="price-old">$45.00</span>
+                        <span class="price-info-icon" title="Info">ⓘ</span>
                     </div>
 
                     <div class="product-description">
-                        <div class="descnew"><p>
+                        <div class="descnew">
+                            <p>
 
 
 
 
 
-Asad by Lattafa Perfumes is a Amber fragrance for men. Asad was launched in 2021. Top notes are Black Pepper, Pineapple and Tobacco; middle notes are Patchouli, Coffee and Iris; base notes are Vanilla, Amber, Dry Wood, Benzoin and Labdanum.
+                                Asad by Lattafa Perfumes is a Amber fragrance for men. Asad was launched in 2021. Top
+                                notes are Black Pepper, Pineapple and Tobacco; middle notes are Patchouli, Coffee and
+                                Iris; base notes are Vanilla, Amber, Dry Wood, Benzoin and Labdanum.
 
 
 
 
 
-</p></div><div class="notesfinal"><p><strong>Top Notes</strong><br>Black Pepper, Tobacco, Pineapple</p></div>
+                            </p>
+                        </div>
+                        <div class="notesfinal">
+                            <p><strong>Top Notes</strong><br>Black Pepper, Tobacco, Pineapple</p>
+                        </div>
 
-<div class="notesfinal"><p><strong>Middle Notes</strong><br>Patchouli, Coffee, Iris</p></div>
-<div class="notesfinal"><p><strong>Base Notes</strong><br>Vanilla, Amber, Dry Wood, Benzoin, Labdanum</p></div>
+                        <div class="notesfinal">
+                            <p><strong>Middle Notes</strong><br>Patchouli, Coffee, Iris</p>
+                        </div>
+                        <div class="notesfinal">
+                            <p><strong>Base Notes</strong><br>Vanilla, Amber, Dry Wood, Benzoin, Labdanum</p>
+                        </div>
                     </div>
 
                     <form action="/cart/add" method="post">
@@ -217,9 +234,8 @@ Asad by Lattafa Perfumes is a Amber fragrance for men. Asad was launched in 2021
             element.classList.add('active');
         }
     </script>
-<script src="/js/lattafa_adapter.js"></script>
-<script src="../js/lattafa_search.js"></script>
+    <script src="/js/lattafa_adapter.js"></script>
+    <script src="../js/lattafa_search.js"></script>
 </body>
 
 </html>
-

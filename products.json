@@ -266,7 +266,7 @@
   {
     "name": "Asad",
     "url": "/products/asad.html",
-    "price": "14.99",
+    "price": "28.00",
     "image": "/assets/products/asad/0.jpg"
   },
   {
@@ -320,7 +320,7 @@
   {
     "name": "Badee Al Oud Noble Blush",
     "url": "/products/badee-al-oud-noble-blush.html",
-    "price": "44.99",
+    "price": "38.00",
     "image": "/assets/products/badee-al-oud-noble-blush/0.jpg"
   },
   {
@@ -668,7 +668,7 @@
   {
     "name": "Khamrah",
     "url": "/products/khamrah.html",
-    "price": "49.99",
+    "price": "27.00",
     "image": "/assets/products/khamrah/0.jpg"
   },
   {
@@ -932,7 +932,7 @@
   {
     "name": "Qaed Al Fursan Untamed",
     "url": "/products/qaed-al-fursan-unlimited.html",
-    "price": "29.99",
+    "price": "24.00",
     "image": "/assets/products/qaed-al-fursan-unlimited/0.jpg"
   },
   {
@@ -1112,7 +1112,7 @@
   {
     "name": "Yara",
     "url": "/products/yara.html",
-    "price": "14.99",
+    "price": "29.00",
     "image": "/assets/products/yara/0.jpg"
   }
 ]

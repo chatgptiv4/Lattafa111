@@ -3426,6 +3426,36 @@
     data-monorail-region="shop_domain" data-resource-timing-sampling-rate="10" data-shs="true" data-shs-beacon="true"
     data-shs-export-with-fetch="true" data-shs-logs-sample-rate="1"
     data-shs-beacon-endpoint="https://www.lattafa-usa.com/api/collect"></script>
+
+<style>
+    /* Injected Priority Styles */
+    .product-price-container {
+        display: flex;
+        align-items: baseline;
+        gap: 8px;
+        font-family: 'Inter', sans-serif;
+        margin-bottom: 20px;
+    }
+
+    .discount-badge {
+        color: red !important;
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+
+    .price-new {
+        color: #000 !important;
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+
+    .price-old {
+        color: #888 !important;
+        text-decoration: line-through !important;
+        font-size: 1.1rem;
+    }
+</style>
+
 </head>
 
 <body class="collection-template  blocks-corner--round" data-initializing>
@@ -3767,7 +3797,11 @@
                                           <div class="f-price__regular"><span
                                               class="visually-hidden visually-hidden--inline">Regular price</span>
                                             <span class="f-price-item f-price-item--regular">
-                                              From $14.99 USD
+                                            </span>
+                                            <div class="product-price-container"><span
+                                                class="discount-badge">-38%</span><span
+                                                class="price-new">$28.00</span><span class="price-old">$45.00</span>
+                                            </div><span style="display:none">
                                             </span>
                                           </div>
                                           <div class="f-price__sale">
@@ -3839,7 +3873,11 @@
                                           <div class="f-price__regular"><span
                                               class="visually-hidden visually-hidden--inline">Regular price</span>
                                             <span class="f-price-item f-price-item--regular">
-                                              $49.99 USD
+                                            </span>
+                                            <div class="product-price-container"><span
+                                                class="discount-badge">-26%</span><span
+                                                class="price-new">$27.00</span><span class="price-old">$37.35</span>
+                                            </div><span style="display:none">
                                             </span>
                                           </div>
                                           <div class="f-price__sale">
@@ -3914,7 +3952,11 @@
                                           <div class="f-price__regular"><span
                                               class="visually-hidden visually-hidden--inline">Regular price</span>
                                             <span class="f-price-item f-price-item--regular">
-                                              $44.99 USD
+                                            </span>
+                                            <div class="product-price-container"><span
+                                                class="discount-badge">-35%</span><span
+                                                class="price-new">$38.00</span><span class="price-old">$59.00</span>
+                                            </div><span style="display:none">
                                             </span>
                                           </div>
                                           <div class="f-price__sale">
@@ -4609,9 +4651,9 @@
         </div>
         <div class="header__icons header__icons--right flex justify-end z-1">
           <div class="header__buttons flex items-center justify-center">
-            <a href="javascript:void(0)" class="search-drawer-button flex items-center justify-center" aria-controls="SearchDrawer"
-              aria-label="Search"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-search icon--large"
-                viewBox="0 0 24 24" fill="none">
+            <a href="javascript:void(0)" class="search-drawer-button flex items-center justify-center"
+              aria-controls="SearchDrawer" aria-label="Search"><svg xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-search icon--large" viewBox="0 0 24 24" fill="none">
                 <path
                   d="M10.875 18.75C15.2242 18.75 18.75 15.2242 18.75 10.875C18.75 6.52576 15.2242 3 10.875 3C6.52576 3 3 6.52576 3 10.875C3 15.2242 6.52576 18.75 10.875 18.75Z"
                   stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -4737,7 +4779,7 @@
                               </button>
                               <ul class="v-scrollable h-full w-full ss">
                                 <li class="menu-drawer__item">
-                                  <a href="/collections/all"
+                                  <a href="/shop-all.html"
                                     class="menu-drawer__item-link flex items-center justify-between">All Fragrances</a>
                                 </li>
                                 <li class="menu-drawer__item">
@@ -4953,7 +4995,11 @@
                                           <div class="f-price__regular"><span
                                               class="visually-hidden visually-hidden--inline">Regular price</span>
                                             <span class="f-price-item f-price-item--regular">
-                                              From $14.99 USD
+                                            </span>
+                                            <div class="product-price-container"><span
+                                                class="discount-badge">-38%</span><span
+                                                class="price-new">$28.00</span><span class="price-old">$45.00</span>
+                                            </div><span style="display:none">
                                             </span>
                                           </div>
                                           <div class="f-price__sale">
@@ -5025,7 +5071,11 @@
                                           <div class="f-price__regular"><span
                                               class="visually-hidden visually-hidden--inline">Regular price</span>
                                             <span class="f-price-item f-price-item--regular">
-                                              $49.99 USD
+                                            </span>
+                                            <div class="product-price-container"><span
+                                                class="discount-badge">-26%</span><span
+                                                class="price-new">$27.00</span><span class="price-old">$37.35</span>
+                                            </div><span style="display:none">
                                             </span>
                                           </div>
                                           <div class="f-price__sale">
@@ -5100,7 +5150,11 @@
                                           <div class="f-price__regular"><span
                                               class="visually-hidden visually-hidden--inline">Regular price</span>
                                             <span class="f-price-item f-price-item--regular">
-                                              $44.99 USD
+                                            </span>
+                                            <div class="product-price-container"><span
+                                                class="discount-badge">-35%</span><span
+                                                class="price-new">$38.00</span><span class="price-old">$59.00</span>
+                                            </div><span style="display:none">
                                             </span>
                                           </div>
                                           <div class="f-price__sale">
@@ -5985,7 +6039,7 @@
                     stroke-linejoin="round" />
                 </svg>
               </span>
-              <a href="/collections/all">Collection</a>
+              <a href="/shop-all.html">Collection</a>
 
               <span aria-hidden="true" class="breadcrumbs--sep">
                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -7596,6 +7650,1236 @@
                       <div class="product-card product-card-style-standard">
                         <div class="product-card__wrapper h-full">
                           <div class="product-card__image-wrapper color-scheme-1 bg-none">
+                            <a href="/products/asad.html" aria-label="Asad" tabindex="-1">
+                              <motion-element data-motion="zoom-out-sm" class="block">
+                                <div class="media-wrapper product-card__image product-card__image--main"
+                                  style="--aspect-ratio: 1.0"><img src="/assets/products/asad/0.jpg" alt="Asad" width="1500" height="1500" loading="lazy" class="motion-reduce" style="width:100%; height:auto;"></div>
+                                <div
+                                  class="media-wrapper product-card__image product-card__image--second inset-full hidden md:block"
+                                  style="--aspect-ratio: 1.0"><img
+                                    src="//www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=1500"
+                                    alt="Eclaire"
+                                    srcset="//www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=70 70w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=140 140w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=165 165w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=355 355w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=450 450w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=535 535w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=710 710w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=900 900w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=1070 1070w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=1420 1420w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=1500 1500w"
+                                    width="1500" height="1500" loading="lazy" class="motion-reduce" sizes="(max-width: 767px) calc((100vw - 38px) / 2),
+(max-width: 1279px) calc((100vw - 90px) / 3),calc(1410px / 4)" is="image-lazy">
+                                </div>
+                              </motion-element>
+                            </a><button class="product-card__quickview btn btn--icon-circle btn--primary no-js-hidden"
+                              aria-label="Quick view"
+                              aria-controls="QuickView-9055154962655-template--20292988403935__product-grid"
+                              aria-haspopup="dialog">
+                              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
+                                role="presentation" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                class="icon icon-magnifying-glass icon--large">
+                                <path
+                                  d="M10.875 18.75C15.2242 18.75 18.75 15.2242 18.75 10.875C18.75 6.52576 15.2242 3 10.875 3C6.52576 3 3 6.52576 3 10.875C3 15.2242 6.52576 18.75 10.875 18.75Z" />
+                                <path d="M16.4434 16.4453L20.9997 21.0016" />
+                              </svg>
+                            </button>
+                            <form method="post" action="/cart/add"
+                              id="quick-add-template--20292988403935__product-grid9055154962655" accept-charset="UTF-8"
+                              class="product-card__actions product-card__main-actions" enctype="multipart/form-data"
+                              novalidate="novalidate" data-type="add-to-cart-form" is="product-form"><input
+                                type="hidden" name="form_type" value="product" /><input type="hidden" name="utf8"
+                                value="?" /><input type="hidden" name="id" value="46981613715679"
+                                class="product-variant-id">
+                              <button id="quick-add-template--20292988403935__product-grid9055154962655-submit"
+                                type="submit" name="add" aria-label="Add to cart"
+                                class="product-card__atc product-card__action-button btn btn--white">
+                                <span
+                                  class="product-card__atc-icon product-card__action-icon inline-flex md:hidden"><svg
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="icon icon-shopping-bag icon--medium" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                      d="M19.575 6.75H4.425C4.24045 6.75087 4.06254 6.81891 3.92451 6.94141C3.78648 7.06391 3.69778 7.23249 3.675 7.41562L2.34375 19.4156C2.33191 19.5202 2.34221 19.6261 2.37396 19.7264C2.40572 19.8267 2.45823 19.9192 2.52808 19.9979C2.59794 20.0766 2.68357 20.1397 2.77941 20.1831C2.87525 20.2266 2.97916 20.2494 3.08438 20.25H20.9156C21.0209 20.2494 21.1248 20.2266 21.2206 20.1831C21.3164 20.1397 21.4021 20.0766 21.4719 19.9979C21.5418 19.9192 21.5943 19.8267 21.626 19.7264C21.6578 19.6261 21.6681 19.5202 21.6563 19.4156L20.325 7.41562C20.3022 7.23249 20.2135 7.06391 20.0755 6.94141C19.9375 6.81891 19.7596 6.75087 19.575 6.75V6.75Z" />
+                                    <path
+                                      d="M8.25 6.75C8.25 5.75544 8.64509 4.80161 9.34835 4.09835C10.0516 3.39509 11.0054 3 12 3C12.9946 3 13.9484 3.39509 14.6517 4.09835C15.3549 4.80161 15.75 5.75544 15.75 6.75" />
+                                  </svg></span>
+                                <span class="product-card__atc-text product-card__action-text">Add to cart</span>
+
+
+                                <div class="loading__spinner hidden">
+                                  <svg aria-hidden="true" focusable="false" class="spinner icon icon--extra-medium"
+                                    viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                                    <circle class="path" fill="none" stroke-width="4" cx="33" cy="33" r="30"></circle>
+                                  </svg>
+                                </div>
+
+                              </button><input type="hidden" name="product-id" value="9055154962655" /><input
+                                type="hidden" name="section-id" value="template--20292988403935__product-grid" />
+                            </form>
+                          </div>
+                          <div class="product-card__info text-left">
+                            <p class="product-card__vendor text-sm m-0">
+                              <span class="visually-hidden">Vendor:</span>
+                              Lattafa
+                            </p>
+                            <h3 class="product-card__title text-pcard-title">
+                              <a class="reversed-link" href="/products/asad.html">Asad</a>
+                            </h3>
+
+                            <div class="f-price f-price--left">
+    <div class="product-price-container">
+        <span class="discount-badge">-38%</span>
+        <span class="price-new">$28.00</span>
+        <span class="price-old">$45.00</span>
+    </div>
+</div>                        </div>
+                        </div>
+                        <quick-view-modal id="QuickView-9055154962655-template--20292988403935__product-grid"
+                          class="quick-view drawer drawer--right" data-product-url="/products/eclaire.html" hidden>
+                          <link
+                            href="//www.lattafa-usa.com/cdn/shop/t/15/assets/section-main-product.css?v=11777017481214845271761071983"
+                            rel="stylesheet" type="text/css" media="all" />
+                          <link
+                            href="//www.lattafa-usa.com/cdn/shop/t/15/assets/component-deferred-media.css?v=73225175381633074481761072006"
+                            rel="stylesheet" type="text/css" media="all" />
+
+                          <link
+                            href="//www.lattafa-usa.com/cdn/shop/t/15/assets/component-product-variant-picker.css?v=165436528996422612571761071997"
+                            rel="stylesheet" type="text/css" media="all" />
+
+                          <div class="fixed-overlay"
+                            aria-controls="QuickView-9055154962655-template--20292988403935__product-grid"></div>
+                          <div class="drawer__inner">
+                            <button class="drawer__close-btn"
+                              aria-controls="QuickView-9055154962655-template--20292988403935__product-grid"
+                              aria-label="Close">
+                              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
+                                class="icon icon-close icon--medium" fill="none" viewBox="0 0 24 24">
+                                <path d="M18.75 5.13496L5.25 18.8544" stroke="currentColor" stroke-width="1.5"
+                                  stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M18.75 18.8544L5.25 5.13496" stroke="currentColor" stroke-width="1.5"
+                                  stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+
+                            </button>
+
+                            <div class="loading__spinner hidden">
+                              <svg aria-hidden="true" focusable="false" class="spinner icon icon--extra-medium"
+                                viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                                <circle class="path" fill="none" stroke-width="4" cx="33" cy="33" r="30"></circle>
+                              </svg>
+                            </div>
+                            <div class="drawer__body v-scrollable h-full quick-view__content"></div>
+                          </div>
+                        </quick-view-modal>
+
+                      </div>
+                    </div>
+<div<div class="f-column card">
+                      <div class="product-card product-card-style-standard">
+                        <div class="product-card__wrapper h-full">
+                          <div class="product-card__image-wrapper color-scheme-1 bg-none">
+                            <a href="/products/yara.html" aria-label="Yara" tabindex="-1">
+                              <motion-element data-motion="zoom-out-sm" class="block">
+                                <div class="media-wrapper product-card__image product-card__image--main"
+                                  style="--aspect-ratio: 1.0"><img src="/assets/products/yara/0.jpg" alt="Yara" width="1500" height="1500" loading="lazy" class="motion-reduce" style="width:100%; height:auto;"></div>
+                                <div
+                                  class="media-wrapper product-card__image product-card__image--second inset-full hidden md:block"
+                                  style="--aspect-ratio: 1.0"><img
+                                    src="//www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=1500"
+                                    alt="Eclaire"
+                                    srcset="//www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=70 70w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=140 140w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=165 165w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=355 355w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=450 450w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=535 535w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=710 710w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=900 900w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=1070 1070w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=1420 1420w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=1500 1500w"
+                                    width="1500" height="1500" loading="lazy" class="motion-reduce" sizes="(max-width: 767px) calc((100vw - 38px) / 2),
+(max-width: 1279px) calc((100vw - 90px) / 3),calc(1410px / 4)" is="image-lazy">
+                                </div>
+                              </motion-element>
+                            </a><button class="product-card__quickview btn btn--icon-circle btn--primary no-js-hidden"
+                              aria-label="Quick view"
+                              aria-controls="QuickView-9055154962655-template--20292988403935__product-grid"
+                              aria-haspopup="dialog">
+                              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
+                                role="presentation" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                class="icon icon-magnifying-glass icon--large">
+                                <path
+                                  d="M10.875 18.75C15.2242 18.75 18.75 15.2242 18.75 10.875C18.75 6.52576 15.2242 3 10.875 3C6.52576 3 3 6.52576 3 10.875C3 15.2242 6.52576 18.75 10.875 18.75Z" />
+                                <path d="M16.4434 16.4453L20.9997 21.0016" />
+                              </svg>
+                            </button>
+                            <form method="post" action="/cart/add"
+                              id="quick-add-template--20292988403935__product-grid9055154962655" accept-charset="UTF-8"
+                              class="product-card__actions product-card__main-actions" enctype="multipart/form-data"
+                              novalidate="novalidate" data-type="add-to-cart-form" is="product-form"><input
+                                type="hidden" name="form_type" value="product" /><input type="hidden" name="utf8"
+                                value="?" /><input type="hidden" name="id" value="46981613715679"
+                                class="product-variant-id">
+                              <button id="quick-add-template--20292988403935__product-grid9055154962655-submit"
+                                type="submit" name="add" aria-label="Add to cart"
+                                class="product-card__atc product-card__action-button btn btn--white">
+                                <span
+                                  class="product-card__atc-icon product-card__action-icon inline-flex md:hidden"><svg
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="icon icon-shopping-bag icon--medium" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                      d="M19.575 6.75H4.425C4.24045 6.75087 4.06254 6.81891 3.92451 6.94141C3.78648 7.06391 3.69778 7.23249 3.675 7.41562L2.34375 19.4156C2.33191 19.5202 2.34221 19.6261 2.37396 19.7264C2.40572 19.8267 2.45823 19.9192 2.52808 19.9979C2.59794 20.0766 2.68357 20.1397 2.77941 20.1831C2.87525 20.2266 2.97916 20.2494 3.08438 20.25H20.9156C21.0209 20.2494 21.1248 20.2266 21.2206 20.1831C21.3164 20.1397 21.4021 20.0766 21.4719 19.9979C21.5418 19.9192 21.5943 19.8267 21.626 19.7264C21.6578 19.6261 21.6681 19.5202 21.6563 19.4156L20.325 7.41562C20.3022 7.23249 20.2135 7.06391 20.0755 6.94141C19.9375 6.81891 19.7596 6.75087 19.575 6.75V6.75Z" />
+                                    <path
+                                      d="M8.25 6.75C8.25 5.75544 8.64509 4.80161 9.34835 4.09835C10.0516 3.39509 11.0054 3 12 3C12.9946 3 13.9484 3.39509 14.6517 4.09835C15.3549 4.80161 15.75 5.75544 15.75 6.75" />
+                                  </svg></span>
+                                <span class="product-card__atc-text product-card__action-text">Add to cart</span>
+
+
+                                <div class="loading__spinner hidden">
+                                  <svg aria-hidden="true" focusable="false" class="spinner icon icon--extra-medium"
+                                    viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                                    <circle class="path" fill="none" stroke-width="4" cx="33" cy="33" r="30"></circle>
+                                  </svg>
+                                </div>
+
+                              </button><input type="hidden" name="product-id" value="9055154962655" /><input
+                                type="hidden" name="section-id" value="template--20292988403935__product-grid" />
+                            </form>
+                          </div>
+                          <div class="product-card__info text-left">
+                            <p class="product-card__vendor text-sm m-0">
+                              <span class="visually-hidden">Vendor:</span>
+                              Lattafa
+                            </p>
+                            <h3 class="product-card__title text-pcard-title">
+                              <a class="reversed-link" href="/products/yara.html">Yara</a>
+                            </h3>
+
+                            <div class="f-price f-price--left">
+    <div class="product-price-container">
+        <span class="discount-badge">-38%</span>
+        <span class="price-new">$28.00</span>
+        <span class="price-old">$45.00</span>
+    </div>
+</div>                        </div>
+                        </div>
+                        <quick-view-modal id="QuickView-9055154962655-template--20292988403935__product-grid"
+                          class="quick-view drawer drawer--right" data-product-url="/products/eclaire.html" hidden>
+                          <link
+                            href="//www.lattafa-usa.com/cdn/shop/t/15/assets/section-main-product.css?v=11777017481214845271761071983"
+                            rel="stylesheet" type="text/css" media="all" />
+                          <link
+                            href="//www.lattafa-usa.com/cdn/shop/t/15/assets/component-deferred-media.css?v=73225175381633074481761072006"
+                            rel="stylesheet" type="text/css" media="all" />
+
+                          <link
+                            href="//www.lattafa-usa.com/cdn/shop/t/15/assets/component-product-variant-picker.css?v=165436528996422612571761071997"
+                            rel="stylesheet" type="text/css" media="all" />
+
+                          <div class="fixed-overlay"
+                            aria-controls="QuickView-9055154962655-template--20292988403935__product-grid"></div>
+                          <div class="drawer__inner">
+                            <button class="drawer__close-btn"
+                              aria-controls="QuickView-9055154962655-template--20292988403935__product-grid"
+                              aria-label="Close">
+                              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
+                                class="icon icon-close icon--medium" fill="none" viewBox="0 0 24 24">
+                                <path d="M18.75 5.13496L5.25 18.8544" stroke="currentColor" stroke-width="1.5"
+                                  stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M18.75 18.8544L5.25 5.13496" stroke="currentColor" stroke-width="1.5"
+                                  stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+
+                            </button>
+
+                            <div class="loading__spinner hidden">
+                              <svg aria-hidden="true" focusable="false" class="spinner icon icon--extra-medium"
+                                viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                                <circle class="path" fill="none" stroke-width="4" cx="33" cy="33" r="30"></circle>
+                              </svg>
+                            </div>
+                            <div class="drawer__body v-scrollable h-full quick-view__content"></div>
+                          </div>
+                        </quick-view-modal>
+
+                      </div>
+                    </div>
+<div<div class="f-column card">
+                      <div class="product-card product-card-style-standard">
+                        <div class="product-card__wrapper h-full">
+                          <div class="product-card__image-wrapper color-scheme-1 bg-none">
+                            <a href="/products/qaed-al-fursan-unlimited.html" aria-label="Qaed Al Fursan" tabindex="-1">
+                              <motion-element data-motion="zoom-out-sm" class="block">
+                                <div class="media-wrapper product-card__image product-card__image--main"
+                                  style="--aspect-ratio: 1.0"><img src="/assets/products/qaed-al-fursan-unlimited/0.jpg" alt="Qaed Al Fursan" width="1500" height="1500" loading="lazy" class="motion-reduce" style="width:100%; height:auto;"></div>
+                                <div
+                                  class="media-wrapper product-card__image product-card__image--second inset-full hidden md:block"
+                                  style="--aspect-ratio: 1.0"><img
+                                    src="//www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=1500"
+                                    alt="Eclaire"
+                                    srcset="//www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=70 70w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=140 140w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=165 165w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=355 355w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=450 450w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=535 535w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=710 710w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=900 900w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=1070 1070w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=1420 1420w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=1500 1500w"
+                                    width="1500" height="1500" loading="lazy" class="motion-reduce" sizes="(max-width: 767px) calc((100vw - 38px) / 2),
+(max-width: 1279px) calc((100vw - 90px) / 3),calc(1410px / 4)" is="image-lazy">
+                                </div>
+                              </motion-element>
+                            </a><button class="product-card__quickview btn btn--icon-circle btn--primary no-js-hidden"
+                              aria-label="Quick view"
+                              aria-controls="QuickView-9055154962655-template--20292988403935__product-grid"
+                              aria-haspopup="dialog">
+                              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
+                                role="presentation" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                class="icon icon-magnifying-glass icon--large">
+                                <path
+                                  d="M10.875 18.75C15.2242 18.75 18.75 15.2242 18.75 10.875C18.75 6.52576 15.2242 3 10.875 3C6.52576 3 3 6.52576 3 10.875C3 15.2242 6.52576 18.75 10.875 18.75Z" />
+                                <path d="M16.4434 16.4453L20.9997 21.0016" />
+                              </svg>
+                            </button>
+                            <form method="post" action="/cart/add"
+                              id="quick-add-template--20292988403935__product-grid9055154962655" accept-charset="UTF-8"
+                              class="product-card__actions product-card__main-actions" enctype="multipart/form-data"
+                              novalidate="novalidate" data-type="add-to-cart-form" is="product-form"><input
+                                type="hidden" name="form_type" value="product" /><input type="hidden" name="utf8"
+                                value="?" /><input type="hidden" name="id" value="46981613715679"
+                                class="product-variant-id">
+                              <button id="quick-add-template--20292988403935__product-grid9055154962655-submit"
+                                type="submit" name="add" aria-label="Add to cart"
+                                class="product-card__atc product-card__action-button btn btn--white">
+                                <span
+                                  class="product-card__atc-icon product-card__action-icon inline-flex md:hidden"><svg
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="icon icon-shopping-bag icon--medium" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                      d="M19.575 6.75H4.425C4.24045 6.75087 4.06254 6.81891 3.92451 6.94141C3.78648 7.06391 3.69778 7.23249 3.675 7.41562L2.34375 19.4156C2.33191 19.5202 2.34221 19.6261 2.37396 19.7264C2.40572 19.8267 2.45823 19.9192 2.52808 19.9979C2.59794 20.0766 2.68357 20.1397 2.77941 20.1831C2.87525 20.2266 2.97916 20.2494 3.08438 20.25H20.9156C21.0209 20.2494 21.1248 20.2266 21.2206 20.1831C21.3164 20.1397 21.4021 20.0766 21.4719 19.9979C21.5418 19.9192 21.5943 19.8267 21.626 19.7264C21.6578 19.6261 21.6681 19.5202 21.6563 19.4156L20.325 7.41562C20.3022 7.23249 20.2135 7.06391 20.0755 6.94141C19.9375 6.81891 19.7596 6.75087 19.575 6.75V6.75Z" />
+                                    <path
+                                      d="M8.25 6.75C8.25 5.75544 8.64509 4.80161 9.34835 4.09835C10.0516 3.39509 11.0054 3 12 3C12.9946 3 13.9484 3.39509 14.6517 4.09835C15.3549 4.80161 15.75 5.75544 15.75 6.75" />
+                                  </svg></span>
+                                <span class="product-card__atc-text product-card__action-text">Add to cart</span>
+
+
+                                <div class="loading__spinner hidden">
+                                  <svg aria-hidden="true" focusable="false" class="spinner icon icon--extra-medium"
+                                    viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                                    <circle class="path" fill="none" stroke-width="4" cx="33" cy="33" r="30"></circle>
+                                  </svg>
+                                </div>
+
+                              </button><input type="hidden" name="product-id" value="9055154962655" /><input
+                                type="hidden" name="section-id" value="template--20292988403935__product-grid" />
+                            </form>
+                          </div>
+                          <div class="product-card__info text-left">
+                            <p class="product-card__vendor text-sm m-0">
+                              <span class="visually-hidden">Vendor:</span>
+                              Lattafa
+                            </p>
+                            <h3 class="product-card__title text-pcard-title">
+                              <a class="reversed-link" href="/products/qaed-al-fursan-unlimited.html">Qaed Al Fursan</a>
+                            </h3>
+
+                            <div class="f-price f-price--left">
+    <div class="product-price-container">
+        <span class="discount-badge">-38%</span>
+        <span class="price-new">$28.00</span>
+        <span class="price-old">$45.00</span>
+    </div>
+</div>                        </div>
+                        </div>
+                        <quick-view-modal id="QuickView-9055154962655-template--20292988403935__product-grid"
+                          class="quick-view drawer drawer--right" data-product-url="/products/eclaire.html" hidden>
+                          <link
+                            href="//www.lattafa-usa.com/cdn/shop/t/15/assets/section-main-product.css?v=11777017481214845271761071983"
+                            rel="stylesheet" type="text/css" media="all" />
+                          <link
+                            href="//www.lattafa-usa.com/cdn/shop/t/15/assets/component-deferred-media.css?v=73225175381633074481761072006"
+                            rel="stylesheet" type="text/css" media="all" />
+
+                          <link
+                            href="//www.lattafa-usa.com/cdn/shop/t/15/assets/component-product-variant-picker.css?v=165436528996422612571761071997"
+                            rel="stylesheet" type="text/css" media="all" />
+
+                          <div class="fixed-overlay"
+                            aria-controls="QuickView-9055154962655-template--20292988403935__product-grid"></div>
+                          <div class="drawer__inner">
+                            <button class="drawer__close-btn"
+                              aria-controls="QuickView-9055154962655-template--20292988403935__product-grid"
+                              aria-label="Close">
+                              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
+                                class="icon icon-close icon--medium" fill="none" viewBox="0 0 24 24">
+                                <path d="M18.75 5.13496L5.25 18.8544" stroke="currentColor" stroke-width="1.5"
+                                  stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M18.75 18.8544L5.25 5.13496" stroke="currentColor" stroke-width="1.5"
+                                  stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+
+                            </button>
+
+                            <div class="loading__spinner hidden">
+                              <svg aria-hidden="true" focusable="false" class="spinner icon icon--extra-medium"
+                                viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                                <circle class="path" fill="none" stroke-width="4" cx="33" cy="33" r="30"></circle>
+                              </svg>
+                            </div>
+                            <div class="drawer__body v-scrollable h-full quick-view__content"></div>
+                          </div>
+                        </quick-view-modal>
+
+                      </div>
+                    </div>
+<div<div class="f-column card">
+                      <div class="product-card product-card-style-standard">
+                        <div class="product-card__wrapper h-full">
+                          <div class="product-card__image-wrapper color-scheme-1 bg-none">
+                            <a href="/products/badee-al-oud-noble-blush.html" aria-label="Badee Al Oud Noble Blush" tabindex="-1">
+                              <motion-element data-motion="zoom-out-sm" class="block">
+                                <div class="media-wrapper product-card__image product-card__image--main"
+                                  style="--aspect-ratio: 1.0"><img src="/assets/products/badee-al-oud-noble-blush/0.jpg" alt="Badee Al Oud Noble Blush" width="1500" height="1500" loading="lazy" class="motion-reduce" style="width:100%; height:auto;"></div>
+                                <div
+                                  class="media-wrapper product-card__image product-card__image--second inset-full hidden md:block"
+                                  style="--aspect-ratio: 1.0"><img
+                                    src="//www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=1500"
+                                    alt="Eclaire"
+                                    srcset="//www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=70 70w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=140 140w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=165 165w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=355 355w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=450 450w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=535 535w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=710 710w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=900 900w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=1070 1070w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=1420 1420w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=1500 1500w"
+                                    width="1500" height="1500" loading="lazy" class="motion-reduce" sizes="(max-width: 767px) calc((100vw - 38px) / 2),
+(max-width: 1279px) calc((100vw - 90px) / 3),calc(1410px / 4)" is="image-lazy">
+                                </div>
+                              </motion-element>
+                            </a><button class="product-card__quickview btn btn--icon-circle btn--primary no-js-hidden"
+                              aria-label="Quick view"
+                              aria-controls="QuickView-9055154962655-template--20292988403935__product-grid"
+                              aria-haspopup="dialog">
+                              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
+                                role="presentation" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                class="icon icon-magnifying-glass icon--large">
+                                <path
+                                  d="M10.875 18.75C15.2242 18.75 18.75 15.2242 18.75 10.875C18.75 6.52576 15.2242 3 10.875 3C6.52576 3 3 6.52576 3 10.875C3 15.2242 6.52576 18.75 10.875 18.75Z" />
+                                <path d="M16.4434 16.4453L20.9997 21.0016" />
+                              </svg>
+                            </button>
+                            <form method="post" action="/cart/add"
+                              id="quick-add-template--20292988403935__product-grid9055154962655" accept-charset="UTF-8"
+                              class="product-card__actions product-card__main-actions" enctype="multipart/form-data"
+                              novalidate="novalidate" data-type="add-to-cart-form" is="product-form"><input
+                                type="hidden" name="form_type" value="product" /><input type="hidden" name="utf8"
+                                value="?" /><input type="hidden" name="id" value="46981613715679"
+                                class="product-variant-id">
+                              <button id="quick-add-template--20292988403935__product-grid9055154962655-submit"
+                                type="submit" name="add" aria-label="Add to cart"
+                                class="product-card__atc product-card__action-button btn btn--white">
+                                <span
+                                  class="product-card__atc-icon product-card__action-icon inline-flex md:hidden"><svg
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="icon icon-shopping-bag icon--medium" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                      d="M19.575 6.75H4.425C4.24045 6.75087 4.06254 6.81891 3.92451 6.94141C3.78648 7.06391 3.69778 7.23249 3.675 7.41562L2.34375 19.4156C2.33191 19.5202 2.34221 19.6261 2.37396 19.7264C2.40572 19.8267 2.45823 19.9192 2.52808 19.9979C2.59794 20.0766 2.68357 20.1397 2.77941 20.1831C2.87525 20.2266 2.97916 20.2494 3.08438 20.25H20.9156C21.0209 20.2494 21.1248 20.2266 21.2206 20.1831C21.3164 20.1397 21.4021 20.0766 21.4719 19.9979C21.5418 19.9192 21.5943 19.8267 21.626 19.7264C21.6578 19.6261 21.6681 19.5202 21.6563 19.4156L20.325 7.41562C20.3022 7.23249 20.2135 7.06391 20.0755 6.94141C19.9375 6.81891 19.7596 6.75087 19.575 6.75V6.75Z" />
+                                    <path
+                                      d="M8.25 6.75C8.25 5.75544 8.64509 4.80161 9.34835 4.09835C10.0516 3.39509 11.0054 3 12 3C12.9946 3 13.9484 3.39509 14.6517 4.09835C15.3549 4.80161 15.75 5.75544 15.75 6.75" />
+                                  </svg></span>
+                                <span class="product-card__atc-text product-card__action-text">Add to cart</span>
+
+
+                                <div class="loading__spinner hidden">
+                                  <svg aria-hidden="true" focusable="false" class="spinner icon icon--extra-medium"
+                                    viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                                    <circle class="path" fill="none" stroke-width="4" cx="33" cy="33" r="30"></circle>
+                                  </svg>
+                                </div>
+
+                              </button><input type="hidden" name="product-id" value="9055154962655" /><input
+                                type="hidden" name="section-id" value="template--20292988403935__product-grid" />
+                            </form>
+                          </div>
+                          <div class="product-card__info text-left">
+                            <p class="product-card__vendor text-sm m-0">
+                              <span class="visually-hidden">Vendor:</span>
+                              Lattafa
+                            </p>
+                            <h3 class="product-card__title text-pcard-title">
+                              <a class="reversed-link" href="/products/badee-al-oud-noble-blush.html">Badee Al Oud Noble Blush</a>
+                            </h3>
+
+                            <div class="f-price f-price--left">
+    <div class="product-price-container">
+        <span class="discount-badge">-38%</span>
+        <span class="price-new">$28.00</span>
+        <span class="price-old">$45.00</span>
+    </div>
+</div>                        </div>
+                        </div>
+                        <quick-view-modal id="QuickView-9055154962655-template--20292988403935__product-grid"
+                          class="quick-view drawer drawer--right" data-product-url="/products/eclaire.html" hidden>
+                          <link
+                            href="//www.lattafa-usa.com/cdn/shop/t/15/assets/section-main-product.css?v=11777017481214845271761071983"
+                            rel="stylesheet" type="text/css" media="all" />
+                          <link
+                            href="//www.lattafa-usa.com/cdn/shop/t/15/assets/component-deferred-media.css?v=73225175381633074481761072006"
+                            rel="stylesheet" type="text/css" media="all" />
+
+                          <link
+                            href="//www.lattafa-usa.com/cdn/shop/t/15/assets/component-product-variant-picker.css?v=165436528996422612571761071997"
+                            rel="stylesheet" type="text/css" media="all" />
+
+                          <div class="fixed-overlay"
+                            aria-controls="QuickView-9055154962655-template--20292988403935__product-grid"></div>
+                          <div class="drawer__inner">
+                            <button class="drawer__close-btn"
+                              aria-controls="QuickView-9055154962655-template--20292988403935__product-grid"
+                              aria-label="Close">
+                              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
+                                class="icon icon-close icon--medium" fill="none" viewBox="0 0 24 24">
+                                <path d="M18.75 5.13496L5.25 18.8544" stroke="currentColor" stroke-width="1.5"
+                                  stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M18.75 18.8544L5.25 5.13496" stroke="currentColor" stroke-width="1.5"
+                                  stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+
+                            </button>
+
+                            <div class="loading__spinner hidden">
+                              <svg aria-hidden="true" focusable="false" class="spinner icon icon--extra-medium"
+                                viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                                <circle class="path" fill="none" stroke-width="4" cx="33" cy="33" r="30"></circle>
+                              </svg>
+                            </div>
+                            <div class="drawer__body v-scrollable h-full quick-view__content"></div>
+                          </div>
+                        </quick-view-modal>
+
+                      </div>
+                    </div>
+<div<div class="f-column card">
+                      <div class="product-card product-card-style-standard">
+                        <div class="product-card__wrapper h-full">
+                          <div class="product-card__image-wrapper color-scheme-1 bg-none">
+                            <a href="/products/khamrah.html" aria-label="Khamrah" tabindex="-1">
+                              <motion-element data-motion="zoom-out-sm" class="block">
+                                <div class="media-wrapper product-card__image product-card__image--main"
+                                  style="--aspect-ratio: 1.0"><img src="/assets/products/khamrah/0.jpg" alt="Khamrah" width="1500" height="1500" loading="lazy" class="motion-reduce" style="width:100%; height:auto;"></div>
+                                <div
+                                  class="media-wrapper product-card__image product-card__image--second inset-full hidden md:block"
+                                  style="--aspect-ratio: 1.0"><img
+                                    src="//www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=1500"
+                                    alt="Eclaire"
+                                    srcset="//www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=70 70w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=140 140w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=165 165w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=355 355w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=450 450w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=535 535w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=710 710w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=900 900w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=1070 1070w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=1420 1420w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=1500 1500w"
+                                    width="1500" height="1500" loading="lazy" class="motion-reduce" sizes="(max-width: 767px) calc((100vw - 38px) / 2),
+(max-width: 1279px) calc((100vw - 90px) / 3),calc(1410px / 4)" is="image-lazy">
+                                </div>
+                              </motion-element>
+                            </a><button class="product-card__quickview btn btn--icon-circle btn--primary no-js-hidden"
+                              aria-label="Quick view"
+                              aria-controls="QuickView-9055154962655-template--20292988403935__product-grid"
+                              aria-haspopup="dialog">
+                              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
+                                role="presentation" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                class="icon icon-magnifying-glass icon--large">
+                                <path
+                                  d="M10.875 18.75C15.2242 18.75 18.75 15.2242 18.75 10.875C18.75 6.52576 15.2242 3 10.875 3C6.52576 3 3 6.52576 3 10.875C3 15.2242 6.52576 18.75 10.875 18.75Z" />
+                                <path d="M16.4434 16.4453L20.9997 21.0016" />
+                              </svg>
+                            </button>
+                            <form method="post" action="/cart/add"
+                              id="quick-add-template--20292988403935__product-grid9055154962655" accept-charset="UTF-8"
+                              class="product-card__actions product-card__main-actions" enctype="multipart/form-data"
+                              novalidate="novalidate" data-type="add-to-cart-form" is="product-form"><input
+                                type="hidden" name="form_type" value="product" /><input type="hidden" name="utf8"
+                                value="?" /><input type="hidden" name="id" value="46981613715679"
+                                class="product-variant-id">
+                              <button id="quick-add-template--20292988403935__product-grid9055154962655-submit"
+                                type="submit" name="add" aria-label="Add to cart"
+                                class="product-card__atc product-card__action-button btn btn--white">
+                                <span
+                                  class="product-card__atc-icon product-card__action-icon inline-flex md:hidden"><svg
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="icon icon-shopping-bag icon--medium" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                      d="M19.575 6.75H4.425C4.24045 6.75087 4.06254 6.81891 3.92451 6.94141C3.78648 7.06391 3.69778 7.23249 3.675 7.41562L2.34375 19.4156C2.33191 19.5202 2.34221 19.6261 2.37396 19.7264C2.40572 19.8267 2.45823 19.9192 2.52808 19.9979C2.59794 20.0766 2.68357 20.1397 2.77941 20.1831C2.87525 20.2266 2.97916 20.2494 3.08438 20.25H20.9156C21.0209 20.2494 21.1248 20.2266 21.2206 20.1831C21.3164 20.1397 21.4021 20.0766 21.4719 19.9979C21.5418 19.9192 21.5943 19.8267 21.626 19.7264C21.6578 19.6261 21.6681 19.5202 21.6563 19.4156L20.325 7.41562C20.3022 7.23249 20.2135 7.06391 20.0755 6.94141C19.9375 6.81891 19.7596 6.75087 19.575 6.75V6.75Z" />
+                                    <path
+                                      d="M8.25 6.75C8.25 5.75544 8.64509 4.80161 9.34835 4.09835C10.0516 3.39509 11.0054 3 12 3C12.9946 3 13.9484 3.39509 14.6517 4.09835C15.3549 4.80161 15.75 5.75544 15.75 6.75" />
+                                  </svg></span>
+                                <span class="product-card__atc-text product-card__action-text">Add to cart</span>
+
+
+                                <div class="loading__spinner hidden">
+                                  <svg aria-hidden="true" focusable="false" class="spinner icon icon--extra-medium"
+                                    viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                                    <circle class="path" fill="none" stroke-width="4" cx="33" cy="33" r="30"></circle>
+                                  </svg>
+                                </div>
+
+                              </button><input type="hidden" name="product-id" value="9055154962655" /><input
+                                type="hidden" name="section-id" value="template--20292988403935__product-grid" />
+                            </form>
+                          </div>
+                          <div class="product-card__info text-left">
+                            <p class="product-card__vendor text-sm m-0">
+                              <span class="visually-hidden">Vendor:</span>
+                              Lattafa
+                            </p>
+                            <h3 class="product-card__title text-pcard-title">
+                              <a class="reversed-link" href="/products/khamrah.html">Khamrah</a>
+                            </h3>
+
+                            <div class="f-price f-price--left">
+    <div class="product-price-container">
+        <span class="discount-badge">-38%</span>
+        <span class="price-new">$28.00</span>
+        <span class="price-old">$45.00</span>
+    </div>
+</div>                        </div>
+                        </div>
+                        <quick-view-modal id="QuickView-9055154962655-template--20292988403935__product-grid"
+                          class="quick-view drawer drawer--right" data-product-url="/products/eclaire.html" hidden>
+                          <link
+                            href="//www.lattafa-usa.com/cdn/shop/t/15/assets/section-main-product.css?v=11777017481214845271761071983"
+                            rel="stylesheet" type="text/css" media="all" />
+                          <link
+                            href="//www.lattafa-usa.com/cdn/shop/t/15/assets/component-deferred-media.css?v=73225175381633074481761072006"
+                            rel="stylesheet" type="text/css" media="all" />
+
+                          <link
+                            href="//www.lattafa-usa.com/cdn/shop/t/15/assets/component-product-variant-picker.css?v=165436528996422612571761071997"
+                            rel="stylesheet" type="text/css" media="all" />
+
+                          <div class="fixed-overlay"
+                            aria-controls="QuickView-9055154962655-template--20292988403935__product-grid"></div>
+                          <div class="drawer__inner">
+                            <button class="drawer__close-btn"
+                              aria-controls="QuickView-9055154962655-template--20292988403935__product-grid"
+                              aria-label="Close">
+                              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
+                                class="icon icon-close icon--medium" fill="none" viewBox="0 0 24 24">
+                                <path d="M18.75 5.13496L5.25 18.8544" stroke="currentColor" stroke-width="1.5"
+                                  stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M18.75 18.8544L5.25 5.13496" stroke="currentColor" stroke-width="1.5"
+                                  stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+
+                            </button>
+
+                            <div class="loading__spinner hidden">
+                              <svg aria-hidden="true" focusable="false" class="spinner icon icon--extra-medium"
+                                viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                                <circle class="path" fill="none" stroke-width="4" cx="33" cy="33" r="30"></circle>
+                              </svg>
+                            </div>
+                            <div class="drawer__body v-scrollable h-full quick-view__content"></div>
+                          </div>
+                        </quick-view-modal>
+
+                      </div>
+                    </div>
+<div<div class="f-column card">
+                      <div class="product-card product-card-style-standard">
+                        <div class="product-card__wrapper h-full">
+                          <div class="product-card__image-wrapper color-scheme-1 bg-none">
+                            <a href="/products/choco-overdose.html" aria-label="Choco Overdose" tabindex="-1">
+                              <motion-element data-motion="zoom-out-sm" class="block">
+                                <div class="media-wrapper product-card__image product-card__image--main"
+                                  style="--aspect-ratio: 1.0"><img src="/assets/products/choco-overdose/0.jpg" alt="Choco Overdose" width="1500" height="1500" loading="lazy" class="motion-reduce" style="width:100%; height:auto;"></div>
+                                <div
+                                  class="media-wrapper product-card__image product-card__image--second inset-full hidden md:block"
+                                  style="--aspect-ratio: 1.0"><img
+                                    src="//www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=1500"
+                                    alt="Eclaire"
+                                    srcset="//www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=70 70w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=140 140w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=165 165w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=355 355w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=450 450w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=535 535w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=710 710w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=900 900w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=1070 1070w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=1420 1420w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=1500 1500w"
+                                    width="1500" height="1500" loading="lazy" class="motion-reduce" sizes="(max-width: 767px) calc((100vw - 38px) / 2),
+(max-width: 1279px) calc((100vw - 90px) / 3),calc(1410px / 4)" is="image-lazy">
+                                </div>
+                              </motion-element>
+                            </a><button class="product-card__quickview btn btn--icon-circle btn--primary no-js-hidden"
+                              aria-label="Quick view"
+                              aria-controls="QuickView-9055154962655-template--20292988403935__product-grid"
+                              aria-haspopup="dialog">
+                              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
+                                role="presentation" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                class="icon icon-magnifying-glass icon--large">
+                                <path
+                                  d="M10.875 18.75C15.2242 18.75 18.75 15.2242 18.75 10.875C18.75 6.52576 15.2242 3 10.875 3C6.52576 3 3 6.52576 3 10.875C3 15.2242 6.52576 18.75 10.875 18.75Z" />
+                                <path d="M16.4434 16.4453L20.9997 21.0016" />
+                              </svg>
+                            </button>
+                            <form method="post" action="/cart/add"
+                              id="quick-add-template--20292988403935__product-grid9055154962655" accept-charset="UTF-8"
+                              class="product-card__actions product-card__main-actions" enctype="multipart/form-data"
+                              novalidate="novalidate" data-type="add-to-cart-form" is="product-form"><input
+                                type="hidden" name="form_type" value="product" /><input type="hidden" name="utf8"
+                                value="?" /><input type="hidden" name="id" value="46981613715679"
+                                class="product-variant-id">
+                              <button id="quick-add-template--20292988403935__product-grid9055154962655-submit"
+                                type="submit" name="add" aria-label="Add to cart"
+                                class="product-card__atc product-card__action-button btn btn--white">
+                                <span
+                                  class="product-card__atc-icon product-card__action-icon inline-flex md:hidden"><svg
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="icon icon-shopping-bag icon--medium" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                      d="M19.575 6.75H4.425C4.24045 6.75087 4.06254 6.81891 3.92451 6.94141C3.78648 7.06391 3.69778 7.23249 3.675 7.41562L2.34375 19.4156C2.33191 19.5202 2.34221 19.6261 2.37396 19.7264C2.40572 19.8267 2.45823 19.9192 2.52808 19.9979C2.59794 20.0766 2.68357 20.1397 2.77941 20.1831C2.87525 20.2266 2.97916 20.2494 3.08438 20.25H20.9156C21.0209 20.2494 21.1248 20.2266 21.2206 20.1831C21.3164 20.1397 21.4021 20.0766 21.4719 19.9979C21.5418 19.9192 21.5943 19.8267 21.626 19.7264C21.6578 19.6261 21.6681 19.5202 21.6563 19.4156L20.325 7.41562C20.3022 7.23249 20.2135 7.06391 20.0755 6.94141C19.9375 6.81891 19.7596 6.75087 19.575 6.75V6.75Z" />
+                                    <path
+                                      d="M8.25 6.75C8.25 5.75544 8.64509 4.80161 9.34835 4.09835C10.0516 3.39509 11.0054 3 12 3C12.9946 3 13.9484 3.39509 14.6517 4.09835C15.3549 4.80161 15.75 5.75544 15.75 6.75" />
+                                  </svg></span>
+                                <span class="product-card__atc-text product-card__action-text">Add to cart</span>
+
+
+                                <div class="loading__spinner hidden">
+                                  <svg aria-hidden="true" focusable="false" class="spinner icon icon--extra-medium"
+                                    viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                                    <circle class="path" fill="none" stroke-width="4" cx="33" cy="33" r="30"></circle>
+                                  </svg>
+                                </div>
+
+                              </button><input type="hidden" name="product-id" value="9055154962655" /><input
+                                type="hidden" name="section-id" value="template--20292988403935__product-grid" />
+                            </form>
+                          </div>
+                          <div class="product-card__info text-left">
+                            <p class="product-card__vendor text-sm m-0">
+                              <span class="visually-hidden">Vendor:</span>
+                              Lattafa
+                            </p>
+                            <h3 class="product-card__title text-pcard-title">
+                              <a class="reversed-link" href="/products/choco-overdose.html">Choco Overdose</a>
+                            </h3>
+
+                            <div class="f-price f-price--left">
+    <div class="product-price-container">
+        <span class="discount-badge">-38%</span>
+        <span class="price-new">$28.00</span>
+        <span class="price-old">$45.00</span>
+    </div>
+</div>                        </div>
+                        </div>
+                        <quick-view-modal id="QuickView-9055154962655-template--20292988403935__product-grid"
+                          class="quick-view drawer drawer--right" data-product-url="/products/eclaire.html" hidden>
+                          <link
+                            href="//www.lattafa-usa.com/cdn/shop/t/15/assets/section-main-product.css?v=11777017481214845271761071983"
+                            rel="stylesheet" type="text/css" media="all" />
+                          <link
+                            href="//www.lattafa-usa.com/cdn/shop/t/15/assets/component-deferred-media.css?v=73225175381633074481761072006"
+                            rel="stylesheet" type="text/css" media="all" />
+
+                          <link
+                            href="//www.lattafa-usa.com/cdn/shop/t/15/assets/component-product-variant-picker.css?v=165436528996422612571761071997"
+                            rel="stylesheet" type="text/css" media="all" />
+
+                          <div class="fixed-overlay"
+                            aria-controls="QuickView-9055154962655-template--20292988403935__product-grid"></div>
+                          <div class="drawer__inner">
+                            <button class="drawer__close-btn"
+                              aria-controls="QuickView-9055154962655-template--20292988403935__product-grid"
+                              aria-label="Close">
+                              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
+                                class="icon icon-close icon--medium" fill="none" viewBox="0 0 24 24">
+                                <path d="M18.75 5.13496L5.25 18.8544" stroke="currentColor" stroke-width="1.5"
+                                  stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M18.75 18.8544L5.25 5.13496" stroke="currentColor" stroke-width="1.5"
+                                  stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+
+                            </button>
+
+                            <div class="loading__spinner hidden">
+                              <svg aria-hidden="true" focusable="false" class="spinner icon icon--extra-medium"
+                                viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                                <circle class="path" fill="none" stroke-width="4" cx="33" cy="33" r="30"></circle>
+                              </svg>
+                            </div>
+                            <div class="drawer__body v-scrollable h-full quick-view__content"></div>
+                          </div>
+                        </quick-view-modal>
+
+                      </div>
+                    </div>
+<div<div class="f-column card">
+                      <div class="product-card product-card-style-standard">
+                        <div class="product-card__wrapper h-full">
+                          <div class="product-card__image-wrapper color-scheme-1 bg-none">
+                            <a href="/products/berry-on-top.html" aria-label="Berry on Top" tabindex="-1">
+                              <motion-element data-motion="zoom-out-sm" class="block">
+                                <div class="media-wrapper product-card__image product-card__image--main"
+                                  style="--aspect-ratio: 1.0"><img src="/assets/products/berry-on-top/0.jpg" alt="Berry on Top" width="1500" height="1500" loading="lazy" class="motion-reduce" style="width:100%; height:auto;"></div>
+                                <div
+                                  class="media-wrapper product-card__image product-card__image--second inset-full hidden md:block"
+                                  style="--aspect-ratio: 1.0"><img
+                                    src="//www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=1500"
+                                    alt="Eclaire"
+                                    srcset="//www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=70 70w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=140 140w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=165 165w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=355 355w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=450 450w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=535 535w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=710 710w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=900 900w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=1070 1070w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=1420 1420w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=1500 1500w"
+                                    width="1500" height="1500" loading="lazy" class="motion-reduce" sizes="(max-width: 767px) calc((100vw - 38px) / 2),
+(max-width: 1279px) calc((100vw - 90px) / 3),calc(1410px / 4)" is="image-lazy">
+                                </div>
+                              </motion-element>
+                            </a><button class="product-card__quickview btn btn--icon-circle btn--primary no-js-hidden"
+                              aria-label="Quick view"
+                              aria-controls="QuickView-9055154962655-template--20292988403935__product-grid"
+                              aria-haspopup="dialog">
+                              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
+                                role="presentation" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                class="icon icon-magnifying-glass icon--large">
+                                <path
+                                  d="M10.875 18.75C15.2242 18.75 18.75 15.2242 18.75 10.875C18.75 6.52576 15.2242 3 10.875 3C6.52576 3 3 6.52576 3 10.875C3 15.2242 6.52576 18.75 10.875 18.75Z" />
+                                <path d="M16.4434 16.4453L20.9997 21.0016" />
+                              </svg>
+                            </button>
+                            <form method="post" action="/cart/add"
+                              id="quick-add-template--20292988403935__product-grid9055154962655" accept-charset="UTF-8"
+                              class="product-card__actions product-card__main-actions" enctype="multipart/form-data"
+                              novalidate="novalidate" data-type="add-to-cart-form" is="product-form"><input
+                                type="hidden" name="form_type" value="product" /><input type="hidden" name="utf8"
+                                value="?" /><input type="hidden" name="id" value="46981613715679"
+                                class="product-variant-id">
+                              <button id="quick-add-template--20292988403935__product-grid9055154962655-submit"
+                                type="submit" name="add" aria-label="Add to cart"
+                                class="product-card__atc product-card__action-button btn btn--white">
+                                <span
+                                  class="product-card__atc-icon product-card__action-icon inline-flex md:hidden"><svg
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="icon icon-shopping-bag icon--medium" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                      d="M19.575 6.75H4.425C4.24045 6.75087 4.06254 6.81891 3.92451 6.94141C3.78648 7.06391 3.69778 7.23249 3.675 7.41562L2.34375 19.4156C2.33191 19.5202 2.34221 19.6261 2.37396 19.7264C2.40572 19.8267 2.45823 19.9192 2.52808 19.9979C2.59794 20.0766 2.68357 20.1397 2.77941 20.1831C2.87525 20.2266 2.97916 20.2494 3.08438 20.25H20.9156C21.0209 20.2494 21.1248 20.2266 21.2206 20.1831C21.3164 20.1397 21.4021 20.0766 21.4719 19.9979C21.5418 19.9192 21.5943 19.8267 21.626 19.7264C21.6578 19.6261 21.6681 19.5202 21.6563 19.4156L20.325 7.41562C20.3022 7.23249 20.2135 7.06391 20.0755 6.94141C19.9375 6.81891 19.7596 6.75087 19.575 6.75V6.75Z" />
+                                    <path
+                                      d="M8.25 6.75C8.25 5.75544 8.64509 4.80161 9.34835 4.09835C10.0516 3.39509 11.0054 3 12 3C12.9946 3 13.9484 3.39509 14.6517 4.09835C15.3549 4.80161 15.75 5.75544 15.75 6.75" />
+                                  </svg></span>
+                                <span class="product-card__atc-text product-card__action-text">Add to cart</span>
+
+
+                                <div class="loading__spinner hidden">
+                                  <svg aria-hidden="true" focusable="false" class="spinner icon icon--extra-medium"
+                                    viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                                    <circle class="path" fill="none" stroke-width="4" cx="33" cy="33" r="30"></circle>
+                                  </svg>
+                                </div>
+
+                              </button><input type="hidden" name="product-id" value="9055154962655" /><input
+                                type="hidden" name="section-id" value="template--20292988403935__product-grid" />
+                            </form>
+                          </div>
+                          <div class="product-card__info text-left">
+                            <p class="product-card__vendor text-sm m-0">
+                              <span class="visually-hidden">Vendor:</span>
+                              Lattafa
+                            </p>
+                            <h3 class="product-card__title text-pcard-title">
+                              <a class="reversed-link" href="/products/berry-on-top.html">Berry on Top</a>
+                            </h3>
+
+                            <div class="f-price f-price--left">
+    <div class="product-price-container">
+        <span class="discount-badge">-38%</span>
+        <span class="price-new">$28.00</span>
+        <span class="price-old">$45.00</span>
+    </div>
+</div>                        </div>
+                        </div>
+                        <quick-view-modal id="QuickView-9055154962655-template--20292988403935__product-grid"
+                          class="quick-view drawer drawer--right" data-product-url="/products/eclaire.html" hidden>
+                          <link
+                            href="//www.lattafa-usa.com/cdn/shop/t/15/assets/section-main-product.css?v=11777017481214845271761071983"
+                            rel="stylesheet" type="text/css" media="all" />
+                          <link
+                            href="//www.lattafa-usa.com/cdn/shop/t/15/assets/component-deferred-media.css?v=73225175381633074481761072006"
+                            rel="stylesheet" type="text/css" media="all" />
+
+                          <link
+                            href="//www.lattafa-usa.com/cdn/shop/t/15/assets/component-product-variant-picker.css?v=165436528996422612571761071997"
+                            rel="stylesheet" type="text/css" media="all" />
+
+                          <div class="fixed-overlay"
+                            aria-controls="QuickView-9055154962655-template--20292988403935__product-grid"></div>
+                          <div class="drawer__inner">
+                            <button class="drawer__close-btn"
+                              aria-controls="QuickView-9055154962655-template--20292988403935__product-grid"
+                              aria-label="Close">
+                              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
+                                class="icon icon-close icon--medium" fill="none" viewBox="0 0 24 24">
+                                <path d="M18.75 5.13496L5.25 18.8544" stroke="currentColor" stroke-width="1.5"
+                                  stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M18.75 18.8544L5.25 5.13496" stroke="currentColor" stroke-width="1.5"
+                                  stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+
+                            </button>
+
+                            <div class="loading__spinner hidden">
+                              <svg aria-hidden="true" focusable="false" class="spinner icon icon--extra-medium"
+                                viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                                <circle class="path" fill="none" stroke-width="4" cx="33" cy="33" r="30"></circle>
+                              </svg>
+                            </div>
+                            <div class="drawer__body v-scrollable h-full quick-view__content"></div>
+                          </div>
+                        </quick-view-modal>
+
+                      </div>
+                    </div>
+<div<div class="f-column card">
+                      <div class="product-card product-card-style-standard">
+                        <div class="product-card__wrapper h-full">
+                          <div class="product-card__image-wrapper color-scheme-1 bg-none">
+                            <a href="/products/vanilla-freak.html" aria-label="Vanilla Freak" tabindex="-1">
+                              <motion-element data-motion="zoom-out-sm" class="block">
+                                <div class="media-wrapper product-card__image product-card__image--main"
+                                  style="--aspect-ratio: 1.0"><img src="/assets/products/vanilla-freak/0.jpg" alt="Vanilla Freak" width="1500" height="1500" loading="lazy" class="motion-reduce" style="width:100%; height:auto;"></div>
+                                <div
+                                  class="media-wrapper product-card__image product-card__image--second inset-full hidden md:block"
+                                  style="--aspect-ratio: 1.0"><img
+                                    src="//www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=1500"
+                                    alt="Eclaire"
+                                    srcset="//www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=70 70w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=140 140w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=165 165w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=355 355w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=450 450w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=535 535w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=710 710w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=900 900w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=1070 1070w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=1420 1420w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=1500 1500w"
+                                    width="1500" height="1500" loading="lazy" class="motion-reduce" sizes="(max-width: 767px) calc((100vw - 38px) / 2),
+(max-width: 1279px) calc((100vw - 90px) / 3),calc(1410px / 4)" is="image-lazy">
+                                </div>
+                              </motion-element>
+                            </a><button class="product-card__quickview btn btn--icon-circle btn--primary no-js-hidden"
+                              aria-label="Quick view"
+                              aria-controls="QuickView-9055154962655-template--20292988403935__product-grid"
+                              aria-haspopup="dialog">
+                              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
+                                role="presentation" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                class="icon icon-magnifying-glass icon--large">
+                                <path
+                                  d="M10.875 18.75C15.2242 18.75 18.75 15.2242 18.75 10.875C18.75 6.52576 15.2242 3 10.875 3C6.52576 3 3 6.52576 3 10.875C3 15.2242 6.52576 18.75 10.875 18.75Z" />
+                                <path d="M16.4434 16.4453L20.9997 21.0016" />
+                              </svg>
+                            </button>
+                            <form method="post" action="/cart/add"
+                              id="quick-add-template--20292988403935__product-grid9055154962655" accept-charset="UTF-8"
+                              class="product-card__actions product-card__main-actions" enctype="multipart/form-data"
+                              novalidate="novalidate" data-type="add-to-cart-form" is="product-form"><input
+                                type="hidden" name="form_type" value="product" /><input type="hidden" name="utf8"
+                                value="?" /><input type="hidden" name="id" value="46981613715679"
+                                class="product-variant-id">
+                              <button id="quick-add-template--20292988403935__product-grid9055154962655-submit"
+                                type="submit" name="add" aria-label="Add to cart"
+                                class="product-card__atc product-card__action-button btn btn--white">
+                                <span
+                                  class="product-card__atc-icon product-card__action-icon inline-flex md:hidden"><svg
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="icon icon-shopping-bag icon--medium" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                      d="M19.575 6.75H4.425C4.24045 6.75087 4.06254 6.81891 3.92451 6.94141C3.78648 7.06391 3.69778 7.23249 3.675 7.41562L2.34375 19.4156C2.33191 19.5202 2.34221 19.6261 2.37396 19.7264C2.40572 19.8267 2.45823 19.9192 2.52808 19.9979C2.59794 20.0766 2.68357 20.1397 2.77941 20.1831C2.87525 20.2266 2.97916 20.2494 3.08438 20.25H20.9156C21.0209 20.2494 21.1248 20.2266 21.2206 20.1831C21.3164 20.1397 21.4021 20.0766 21.4719 19.9979C21.5418 19.9192 21.5943 19.8267 21.626 19.7264C21.6578 19.6261 21.6681 19.5202 21.6563 19.4156L20.325 7.41562C20.3022 7.23249 20.2135 7.06391 20.0755 6.94141C19.9375 6.81891 19.7596 6.75087 19.575 6.75V6.75Z" />
+                                    <path
+                                      d="M8.25 6.75C8.25 5.75544 8.64509 4.80161 9.34835 4.09835C10.0516 3.39509 11.0054 3 12 3C12.9946 3 13.9484 3.39509 14.6517 4.09835C15.3549 4.80161 15.75 5.75544 15.75 6.75" />
+                                  </svg></span>
+                                <span class="product-card__atc-text product-card__action-text">Add to cart</span>
+
+
+                                <div class="loading__spinner hidden">
+                                  <svg aria-hidden="true" focusable="false" class="spinner icon icon--extra-medium"
+                                    viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                                    <circle class="path" fill="none" stroke-width="4" cx="33" cy="33" r="30"></circle>
+                                  </svg>
+                                </div>
+
+                              </button><input type="hidden" name="product-id" value="9055154962655" /><input
+                                type="hidden" name="section-id" value="template--20292988403935__product-grid" />
+                            </form>
+                          </div>
+                          <div class="product-card__info text-left">
+                            <p class="product-card__vendor text-sm m-0">
+                              <span class="visually-hidden">Vendor:</span>
+                              Lattafa
+                            </p>
+                            <h3 class="product-card__title text-pcard-title">
+                              <a class="reversed-link" href="/products/vanilla-freak.html">Vanilla Freak</a>
+                            </h3>
+
+                            <div class="f-price f-price--left">
+    <div class="product-price-container">
+        <span class="discount-badge">-38%</span>
+        <span class="price-new">$28.00</span>
+        <span class="price-old">$45.00</span>
+    </div>
+</div>                        </div>
+                        </div>
+                        <quick-view-modal id="QuickView-9055154962655-template--20292988403935__product-grid"
+                          class="quick-view drawer drawer--right" data-product-url="/products/eclaire.html" hidden>
+                          <link
+                            href="//www.lattafa-usa.com/cdn/shop/t/15/assets/section-main-product.css?v=11777017481214845271761071983"
+                            rel="stylesheet" type="text/css" media="all" />
+                          <link
+                            href="//www.lattafa-usa.com/cdn/shop/t/15/assets/component-deferred-media.css?v=73225175381633074481761072006"
+                            rel="stylesheet" type="text/css" media="all" />
+
+                          <link
+                            href="//www.lattafa-usa.com/cdn/shop/t/15/assets/component-product-variant-picker.css?v=165436528996422612571761071997"
+                            rel="stylesheet" type="text/css" media="all" />
+
+                          <div class="fixed-overlay"
+                            aria-controls="QuickView-9055154962655-template--20292988403935__product-grid"></div>
+                          <div class="drawer__inner">
+                            <button class="drawer__close-btn"
+                              aria-controls="QuickView-9055154962655-template--20292988403935__product-grid"
+                              aria-label="Close">
+                              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
+                                class="icon icon-close icon--medium" fill="none" viewBox="0 0 24 24">
+                                <path d="M18.75 5.13496L5.25 18.8544" stroke="currentColor" stroke-width="1.5"
+                                  stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M18.75 18.8544L5.25 5.13496" stroke="currentColor" stroke-width="1.5"
+                                  stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+
+                            </button>
+
+                            <div class="loading__spinner hidden">
+                              <svg aria-hidden="true" focusable="false" class="spinner icon icon--extra-medium"
+                                viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                                <circle class="path" fill="none" stroke-width="4" cx="33" cy="33" r="30"></circle>
+                              </svg>
+                            </div>
+                            <div class="drawer__body v-scrollable h-full quick-view__content"></div>
+                          </div>
+                        </quick-view-modal>
+
+                      </div>
+                    </div>
+<div<div class="f-column card">
+                      <div class="product-card product-card-style-standard">
+                        <div class="product-card__wrapper h-full">
+                          <div class="product-card__image-wrapper color-scheme-1 bg-none">
+                            <a href="/products/cookie-crave.html" aria-label="Cookie Crave" tabindex="-1">
+                              <motion-element data-motion="zoom-out-sm" class="block">
+                                <div class="media-wrapper product-card__image product-card__image--main"
+                                  style="--aspect-ratio: 1.0"><img src="/assets/products/cookie-crave/0.jpg" alt="Cookie Crave" width="1500" height="1500" loading="lazy" class="motion-reduce" style="width:100%; height:auto;"></div>
+                                <div
+                                  class="media-wrapper product-card__image product-card__image--second inset-full hidden md:block"
+                                  style="--aspect-ratio: 1.0"><img
+                                    src="//www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=1500"
+                                    alt="Eclaire"
+                                    srcset="//www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=70 70w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=140 140w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=165 165w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=355 355w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=450 450w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=535 535w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=710 710w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=900 900w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=1070 1070w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=1420 1420w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=1500 1500w"
+                                    width="1500" height="1500" loading="lazy" class="motion-reduce" sizes="(max-width: 767px) calc((100vw - 38px) / 2),
+(max-width: 1279px) calc((100vw - 90px) / 3),calc(1410px / 4)" is="image-lazy">
+                                </div>
+                              </motion-element>
+                            </a><button class="product-card__quickview btn btn--icon-circle btn--primary no-js-hidden"
+                              aria-label="Quick view"
+                              aria-controls="QuickView-9055154962655-template--20292988403935__product-grid"
+                              aria-haspopup="dialog">
+                              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
+                                role="presentation" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                class="icon icon-magnifying-glass icon--large">
+                                <path
+                                  d="M10.875 18.75C15.2242 18.75 18.75 15.2242 18.75 10.875C18.75 6.52576 15.2242 3 10.875 3C6.52576 3 3 6.52576 3 10.875C3 15.2242 6.52576 18.75 10.875 18.75Z" />
+                                <path d="M16.4434 16.4453L20.9997 21.0016" />
+                              </svg>
+                            </button>
+                            <form method="post" action="/cart/add"
+                              id="quick-add-template--20292988403935__product-grid9055154962655" accept-charset="UTF-8"
+                              class="product-card__actions product-card__main-actions" enctype="multipart/form-data"
+                              novalidate="novalidate" data-type="add-to-cart-form" is="product-form"><input
+                                type="hidden" name="form_type" value="product" /><input type="hidden" name="utf8"
+                                value="?" /><input type="hidden" name="id" value="46981613715679"
+                                class="product-variant-id">
+                              <button id="quick-add-template--20292988403935__product-grid9055154962655-submit"
+                                type="submit" name="add" aria-label="Add to cart"
+                                class="product-card__atc product-card__action-button btn btn--white">
+                                <span
+                                  class="product-card__atc-icon product-card__action-icon inline-flex md:hidden"><svg
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="icon icon-shopping-bag icon--medium" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                      d="M19.575 6.75H4.425C4.24045 6.75087 4.06254 6.81891 3.92451 6.94141C3.78648 7.06391 3.69778 7.23249 3.675 7.41562L2.34375 19.4156C2.33191 19.5202 2.34221 19.6261 2.37396 19.7264C2.40572 19.8267 2.45823 19.9192 2.52808 19.9979C2.59794 20.0766 2.68357 20.1397 2.77941 20.1831C2.87525 20.2266 2.97916 20.2494 3.08438 20.25H20.9156C21.0209 20.2494 21.1248 20.2266 21.2206 20.1831C21.3164 20.1397 21.4021 20.0766 21.4719 19.9979C21.5418 19.9192 21.5943 19.8267 21.626 19.7264C21.6578 19.6261 21.6681 19.5202 21.6563 19.4156L20.325 7.41562C20.3022 7.23249 20.2135 7.06391 20.0755 6.94141C19.9375 6.81891 19.7596 6.75087 19.575 6.75V6.75Z" />
+                                    <path
+                                      d="M8.25 6.75C8.25 5.75544 8.64509 4.80161 9.34835 4.09835C10.0516 3.39509 11.0054 3 12 3C12.9946 3 13.9484 3.39509 14.6517 4.09835C15.3549 4.80161 15.75 5.75544 15.75 6.75" />
+                                  </svg></span>
+                                <span class="product-card__atc-text product-card__action-text">Add to cart</span>
+
+
+                                <div class="loading__spinner hidden">
+                                  <svg aria-hidden="true" focusable="false" class="spinner icon icon--extra-medium"
+                                    viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                                    <circle class="path" fill="none" stroke-width="4" cx="33" cy="33" r="30"></circle>
+                                  </svg>
+                                </div>
+
+                              </button><input type="hidden" name="product-id" value="9055154962655" /><input
+                                type="hidden" name="section-id" value="template--20292988403935__product-grid" />
+                            </form>
+                          </div>
+                          <div class="product-card__info text-left">
+                            <p class="product-card__vendor text-sm m-0">
+                              <span class="visually-hidden">Vendor:</span>
+                              Lattafa
+                            </p>
+                            <h3 class="product-card__title text-pcard-title">
+                              <a class="reversed-link" href="/products/cookie-crave.html">Cookie Crave</a>
+                            </h3>
+
+                            <div class="f-price f-price--left">
+    <div class="product-price-container">
+        <span class="discount-badge">-38%</span>
+        <span class="price-new">$28.00</span>
+        <span class="price-old">$45.00</span>
+    </div>
+</div>                        </div>
+                        </div>
+                        <quick-view-modal id="QuickView-9055154962655-template--20292988403935__product-grid"
+                          class="quick-view drawer drawer--right" data-product-url="/products/eclaire.html" hidden>
+                          <link
+                            href="//www.lattafa-usa.com/cdn/shop/t/15/assets/section-main-product.css?v=11777017481214845271761071983"
+                            rel="stylesheet" type="text/css" media="all" />
+                          <link
+                            href="//www.lattafa-usa.com/cdn/shop/t/15/assets/component-deferred-media.css?v=73225175381633074481761072006"
+                            rel="stylesheet" type="text/css" media="all" />
+
+                          <link
+                            href="//www.lattafa-usa.com/cdn/shop/t/15/assets/component-product-variant-picker.css?v=165436528996422612571761071997"
+                            rel="stylesheet" type="text/css" media="all" />
+
+                          <div class="fixed-overlay"
+                            aria-controls="QuickView-9055154962655-template--20292988403935__product-grid"></div>
+                          <div class="drawer__inner">
+                            <button class="drawer__close-btn"
+                              aria-controls="QuickView-9055154962655-template--20292988403935__product-grid"
+                              aria-label="Close">
+                              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
+                                class="icon icon-close icon--medium" fill="none" viewBox="0 0 24 24">
+                                <path d="M18.75 5.13496L5.25 18.8544" stroke="currentColor" stroke-width="1.5"
+                                  stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M18.75 18.8544L5.25 5.13496" stroke="currentColor" stroke-width="1.5"
+                                  stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+
+                            </button>
+
+                            <div class="loading__spinner hidden">
+                              <svg aria-hidden="true" focusable="false" class="spinner icon icon--extra-medium"
+                                viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                                <circle class="path" fill="none" stroke-width="4" cx="33" cy="33" r="30"></circle>
+                              </svg>
+                            </div>
+                            <div class="drawer__body v-scrollable h-full quick-view__content"></div>
+                          </div>
+                        </quick-view-modal>
+
+                      </div>
+                    </div>
+<div<div class="f-column card">
+                      <div class="product-card product-card-style-standard">
+                        <div class="product-card__wrapper h-full">
+                          <div class="product-card__image-wrapper color-scheme-1 bg-none">
+                            <a href="/products/whipped-pleasure.html" aria-label="Whipped Pleasure" tabindex="-1">
+                              <motion-element data-motion="zoom-out-sm" class="block">
+                                <div class="media-wrapper product-card__image product-card__image--main"
+                                  style="--aspect-ratio: 1.0"><img src="/assets/products/whipped-pleasure/0.jpg" alt="Whipped Pleasure" width="1500" height="1500" loading="lazy" class="motion-reduce" style="width:100%; height:auto;"></div>
+                                <div
+                                  class="media-wrapper product-card__image product-card__image--second inset-full hidden md:block"
+                                  style="--aspect-ratio: 1.0"><img
+                                    src="//www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=1500"
+                                    alt="Eclaire"
+                                    srcset="//www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=70 70w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=140 140w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=165 165w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=355 355w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=450 450w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=535 535w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=710 710w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=900 900w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=1070 1070w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=1420 1420w, //www.lattafa-usa.com/cdn/shop/files/Eclaire-2_ad62b0e3-28ea-46a2-b8cb-447085efaecc.png?v=1747415649&amp;width=1500 1500w"
+                                    width="1500" height="1500" loading="lazy" class="motion-reduce" sizes="(max-width: 767px) calc((100vw - 38px) / 2),
+(max-width: 1279px) calc((100vw - 90px) / 3),calc(1410px / 4)" is="image-lazy">
+                                </div>
+                              </motion-element>
+                            </a><button class="product-card__quickview btn btn--icon-circle btn--primary no-js-hidden"
+                              aria-label="Quick view"
+                              aria-controls="QuickView-9055154962655-template--20292988403935__product-grid"
+                              aria-haspopup="dialog">
+                              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
+                                role="presentation" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                class="icon icon-magnifying-glass icon--large">
+                                <path
+                                  d="M10.875 18.75C15.2242 18.75 18.75 15.2242 18.75 10.875C18.75 6.52576 15.2242 3 10.875 3C6.52576 3 3 6.52576 3 10.875C3 15.2242 6.52576 18.75 10.875 18.75Z" />
+                                <path d="M16.4434 16.4453L20.9997 21.0016" />
+                              </svg>
+                            </button>
+                            <form method="post" action="/cart/add"
+                              id="quick-add-template--20292988403935__product-grid9055154962655" accept-charset="UTF-8"
+                              class="product-card__actions product-card__main-actions" enctype="multipart/form-data"
+                              novalidate="novalidate" data-type="add-to-cart-form" is="product-form"><input
+                                type="hidden" name="form_type" value="product" /><input type="hidden" name="utf8"
+                                value="?" /><input type="hidden" name="id" value="46981613715679"
+                                class="product-variant-id">
+                              <button id="quick-add-template--20292988403935__product-grid9055154962655-submit"
+                                type="submit" name="add" aria-label="Add to cart"
+                                class="product-card__atc product-card__action-button btn btn--white">
+                                <span
+                                  class="product-card__atc-icon product-card__action-icon inline-flex md:hidden"><svg
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="icon icon-shopping-bag icon--medium" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                      d="M19.575 6.75H4.425C4.24045 6.75087 4.06254 6.81891 3.92451 6.94141C3.78648 7.06391 3.69778 7.23249 3.675 7.41562L2.34375 19.4156C2.33191 19.5202 2.34221 19.6261 2.37396 19.7264C2.40572 19.8267 2.45823 19.9192 2.52808 19.9979C2.59794 20.0766 2.68357 20.1397 2.77941 20.1831C2.87525 20.2266 2.97916 20.2494 3.08438 20.25H20.9156C21.0209 20.2494 21.1248 20.2266 21.2206 20.1831C21.3164 20.1397 21.4021 20.0766 21.4719 19.9979C21.5418 19.9192 21.5943 19.8267 21.626 19.7264C21.6578 19.6261 21.6681 19.5202 21.6563 19.4156L20.325 7.41562C20.3022 7.23249 20.2135 7.06391 20.0755 6.94141C19.9375 6.81891 19.7596 6.75087 19.575 6.75V6.75Z" />
+                                    <path
+                                      d="M8.25 6.75C8.25 5.75544 8.64509 4.80161 9.34835 4.09835C10.0516 3.39509 11.0054 3 12 3C12.9946 3 13.9484 3.39509 14.6517 4.09835C15.3549 4.80161 15.75 5.75544 15.75 6.75" />
+                                  </svg></span>
+                                <span class="product-card__atc-text product-card__action-text">Add to cart</span>
+
+
+                                <div class="loading__spinner hidden">
+                                  <svg aria-hidden="true" focusable="false" class="spinner icon icon--extra-medium"
+                                    viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                                    <circle class="path" fill="none" stroke-width="4" cx="33" cy="33" r="30"></circle>
+                                  </svg>
+                                </div>
+
+                              </button><input type="hidden" name="product-id" value="9055154962655" /><input
+                                type="hidden" name="section-id" value="template--20292988403935__product-grid" />
+                            </form>
+                          </div>
+                          <div class="product-card__info text-left">
+                            <p class="product-card__vendor text-sm m-0">
+                              <span class="visually-hidden">Vendor:</span>
+                              Lattafa
+                            </p>
+                            <h3 class="product-card__title text-pcard-title">
+                              <a class="reversed-link" href="/products/whipped-pleasure.html">Whipped Pleasure</a>
+                            </h3>
+
+                            <div class="f-price f-price--left">
+    <div class="product-price-container">
+        <span class="discount-badge">-38%</span>
+        <span class="price-new">$28.00</span>
+        <span class="price-old">$45.00</span>
+    </div>
+</div>                        </div>
+                        </div>
+                        <quick-view-modal id="QuickView-9055154962655-template--20292988403935__product-grid"
+                          class="quick-view drawer drawer--right" data-product-url="/products/eclaire.html" hidden>
+                          <link
+                            href="//www.lattafa-usa.com/cdn/shop/t/15/assets/section-main-product.css?v=11777017481214845271761071983"
+                            rel="stylesheet" type="text/css" media="all" />
+                          <link
+                            href="//www.lattafa-usa.com/cdn/shop/t/15/assets/component-deferred-media.css?v=73225175381633074481761072006"
+                            rel="stylesheet" type="text/css" media="all" />
+
+                          <link
+                            href="//www.lattafa-usa.com/cdn/shop/t/15/assets/component-product-variant-picker.css?v=165436528996422612571761071997"
+                            rel="stylesheet" type="text/css" media="all" />
+
+                          <div class="fixed-overlay"
+                            aria-controls="QuickView-9055154962655-template--20292988403935__product-grid"></div>
+                          <div class="drawer__inner">
+                            <button class="drawer__close-btn"
+                              aria-controls="QuickView-9055154962655-template--20292988403935__product-grid"
+                              aria-label="Close">
+                              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
+                                class="icon icon-close icon--medium" fill="none" viewBox="0 0 24 24">
+                                <path d="M18.75 5.13496L5.25 18.8544" stroke="currentColor" stroke-width="1.5"
+                                  stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M18.75 18.8544L5.25 5.13496" stroke="currentColor" stroke-width="1.5"
+                                  stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+
+                            </button>
+
+                            <div class="loading__spinner hidden">
+                              <svg aria-hidden="true" focusable="false" class="spinner icon icon--extra-medium"
+                                viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                                <circle class="path" fill="none" stroke-width="4" cx="33" cy="33" r="30"></circle>
+                              </svg>
+                            </div>
+                            <div class="drawer__body v-scrollable h-full quick-view__content"></div>
+                          </div>
+                        </quick-view-modal>
+
+                      </div>
+                    </div>
+<div<div class="f-column card">
+                      <div class="product-card product-card-style-standard">
+                        <div class="product-card__wrapper h-full">
+                          <div class="product-card__image-wrapper color-scheme-1 bg-none">
                             <a href="/products/eclaire.html" aria-label="Eclaire" tabindex="-1">
                               <motion-element data-motion="zoom-out-sm" class="block">
                                 <div class="media-wrapper product-card__image product-card__image--main"
@@ -7748,7 +9032,7 @@
 
                       </div>
                     </div>
-                    <div class="f-column card">
+<div<div class="f-column card">
                       <div class="product-card product-card-style-standard">
                         <div class="product-card__wrapper h-full">
                           <div
@@ -7826,39 +9110,13 @@
                                 Collection 25ml 4pcs Gift Set</a>
                             </h3>
 
-                            <div class="
-    f-price f-price--left f-price--on-sale ">
-                              <div class="f-price__regular"><span
-                                  class="visually-hidden visually-hidden--inline">Regular price</span>
-                                <span class="f-price-item f-price-item--regular">
-                                  $48.00 USD
-                                </span>
-                              </div>
-                              <div class="f-price__sale">
-                                <span class="visually-hidden visually-hidden--inline">Sale price</span>
-                                <span class="f-price-item f-price-item--sale">
-                                  $48.00 USD
-                                </span>
-                                <span class="visually-hidden visually-hidden--inline">Regular price</span>
-                                <span class="f-price-item f-price-item--regular">
-                                  <s>
-
-                                    $69.99 USD
-
-                                  </s>
-                                </span>
-                              </div>
-                              <div class="f-price__unit-wrapper hidden">
-                                <span class="visually-hidden">Unit price</span>
-                                <div class="f-price__unit"><span data-unit-price></span><span
-                                    aria-hidden="true">/</span><span class="visually-hidden">per&nbsp;</span><span
-                                    data-unit-price-base-unit></span></div>
-                              </div>
-
-
-                            </div>
-
-                          </div>
+                            <div class="f-price f-price--left">
+    <div class="product-price-container">
+        <span class="discount-badge">-38%</span>
+        <span class="price-new">$28.00</span>
+        <span class="price-old">$45.00</span>
+    </div>
+</div>                       </div>
                         </div>
                         <quick-view-modal id="QuickView-9074696552671-template--20292988403935__product-grid"
                           class="quick-view drawer drawer--right"
@@ -7898,7 +9156,7 @@
 
                       </div>
                     </div>
-                    <div class="f-column card">
+<div<div class="f-column card">
                       <div class="product-card product-card-style-standard">
                         <div class="product-card__wrapper h-full">
                           <div class="product-card__image-wrapper color-scheme-1 bg-none">
@@ -8054,7 +9312,7 @@
 
                       </div>
                     </div>
-                    <div class="f-column card">
+<div<div class="f-column card">
                       <div class="product-card product-card-style-standard">
                         <div class="product-card__wrapper h-full">
                           <div class="product-card__image-wrapper color-scheme-1 bg-none">
@@ -8118,39 +9376,13 @@
                               <a class="reversed-link" href="/products/yara-candy.html">Yara Candy</a>
                             </h3>
 
-                            <div class="
-    f-price f-price--left">
-                              <div class="f-price__regular"><span
-                                  class="visually-hidden visually-hidden--inline">Regular price</span>
-                                <span class="f-price-item f-price-item--regular">
-                                  From $29.99 USD
-                                </span>
-                              </div>
-                              <div class="f-price__sale">
-                                <span class="visually-hidden visually-hidden--inline">Sale price</span>
-                                <span class="f-price-item f-price-item--sale">
-                                  From $29.99 USD
-                                </span>
-                                <span class="visually-hidden visually-hidden--inline">Regular price</span>
-                                <span class="f-price-item f-price-item--regular">
-                                  <s>
-
-
-
-                                  </s>
-                                </span>
-                              </div>
-                              <div class="f-price__unit-wrapper hidden">
-                                <span class="visually-hidden">Unit price</span>
-                                <div class="f-price__unit"><span data-unit-price></span><span
-                                    aria-hidden="true">/</span><span class="visually-hidden">per&nbsp;</span><span
-                                    data-unit-price-base-unit></span></div>
-                              </div>
-
-
-                            </div>
-
-                          </div>
+                            <div class="f-price f-price--left">
+    <div class="product-price-container">
+        <span class="discount-badge">-38%</span>
+        <span class="price-new">$28.00</span>
+        <span class="price-old">$45.00</span>
+    </div>
+</div>                       </div>
                         </div>
                         <quick-view-modal id="QuickView-9055168233695-template--20292988403935__product-grid"
                           class="quick-view drawer drawer--right" data-product-url="/products/yara-candy.html" hidden>
@@ -8193,7 +9425,7 @@
 
                       </div>
                     </div>
-                    <div class="f-column card">
+<div<div class="f-column card">
                       <div class="product-card product-card-style-standard">
                         <div class="product-card__wrapper h-full">
                           <div class="product-card__image-wrapper color-scheme-1 bg-none">
@@ -8274,39 +9506,13 @@
                               <a class="reversed-link" href="/products/khamrah-dukhan.html">Khamrah Dukhan</a>
                             </h3>
 
-                            <div class="
-    f-price f-price--left">
-                              <div class="f-price__regular"><span
-                                  class="visually-hidden visually-hidden--inline">Regular price</span>
-                                <span class="f-price-item f-price-item--regular">
-                                  $49.99 USD
-                                </span>
-                              </div>
-                              <div class="f-price__sale">
-                                <span class="visually-hidden visually-hidden--inline">Sale price</span>
-                                <span class="f-price-item f-price-item--sale">
-                                  $49.99 USD
-                                </span>
-                                <span class="visually-hidden visually-hidden--inline">Regular price</span>
-                                <span class="f-price-item f-price-item--regular">
-                                  <s>
-
-
-
-                                  </s>
-                                </span>
-                              </div>
-                              <div class="f-price__unit-wrapper hidden">
-                                <span class="visually-hidden">Unit price</span>
-                                <div class="f-price__unit"><span data-unit-price></span><span
-                                    aria-hidden="true">/</span><span class="visually-hidden">per&nbsp;</span><span
-                                    data-unit-price-base-unit></span></div>
-                              </div>
-
-
-                            </div>
-
-                          </div>
+                            <div class="f-price f-price--left">
+    <div class="product-price-container">
+        <span class="discount-badge">-38%</span>
+        <span class="price-new">$28.00</span>
+        <span class="price-old">$45.00</span>
+    </div>
+</div>                       </div>
                         </div>
                         <quick-view-modal id="QuickView-9055157354719-template--20292988403935__product-grid"
                           class="quick-view drawer drawer--right" data-product-url="/products/khamrah-dukhan.html"
@@ -8350,7 +9556,7 @@
 
                       </div>
                     </div>
-                    <div class="f-column card">
+<div<div class="f-column card">
                       <div class="product-card product-card-style-standard">
                         <div class="product-card__wrapper h-full">
                           <div class="product-card__image-wrapper color-scheme-1 bg-none">
@@ -8509,7 +9715,7 @@
 
                       </div>
                     </div>
-                    <div class="f-column card">
+<div<div class="f-column card">
                       <div class="product-card product-card-style-standard">
                         <div class="product-card__wrapper h-full">
                           <div class="product-card__image-wrapper color-scheme-1 bg-none">
@@ -8665,166 +9871,7 @@
 
                       </div>
                     </div>
-                    <div class="f-column card">
-                      <div class="product-card product-card-style-standard">
-                        <div class="product-card__wrapper h-full">
-                          <div class="product-card__image-wrapper color-scheme-1 bg-none">
-                            <a href="/products/badee-al-oud-noble-blush.html" aria-label="Badee Al Oud Noble Blush"
-                              tabindex="-1">
-                              <motion-element data-motion="zoom-out-sm" class="block">
-                                <div class="media-wrapper product-card__image product-card__image--main"
-                                  style="--aspect-ratio: 1.0"><img
-                                    src="//www.lattafa-usa.com/cdn/shop/files/Badee-Al-Oud-Noble-Blush-1_efc7268e-6d5c-413d-ae1e-ef7c9873bb6e.png?v=1747415567&amp;width=1500"
-                                    alt="Badee Al Oud Noble Blush"
-                                    srcset="//www.lattafa-usa.com/cdn/shop/files/Badee-Al-Oud-Noble-Blush-1_efc7268e-6d5c-413d-ae1e-ef7c9873bb6e.png?v=1747415567&amp;width=70 70w, //www.lattafa-usa.com/cdn/shop/files/Badee-Al-Oud-Noble-Blush-1_efc7268e-6d5c-413d-ae1e-ef7c9873bb6e.png?v=1747415567&amp;width=140 140w, //www.lattafa-usa.com/cdn/shop/files/Badee-Al-Oud-Noble-Blush-1_efc7268e-6d5c-413d-ae1e-ef7c9873bb6e.png?v=1747415567&amp;width=165 165w, //www.lattafa-usa.com/cdn/shop/files/Badee-Al-Oud-Noble-Blush-1_efc7268e-6d5c-413d-ae1e-ef7c9873bb6e.png?v=1747415567&amp;width=355 355w, //www.lattafa-usa.com/cdn/shop/files/Badee-Al-Oud-Noble-Blush-1_efc7268e-6d5c-413d-ae1e-ef7c9873bb6e.png?v=1747415567&amp;width=450 450w, //www.lattafa-usa.com/cdn/shop/files/Badee-Al-Oud-Noble-Blush-1_efc7268e-6d5c-413d-ae1e-ef7c9873bb6e.png?v=1747415567&amp;width=535 535w, //www.lattafa-usa.com/cdn/shop/files/Badee-Al-Oud-Noble-Blush-1_efc7268e-6d5c-413d-ae1e-ef7c9873bb6e.png?v=1747415567&amp;width=710 710w, //www.lattafa-usa.com/cdn/shop/files/Badee-Al-Oud-Noble-Blush-1_efc7268e-6d5c-413d-ae1e-ef7c9873bb6e.png?v=1747415567&amp;width=900 900w, //www.lattafa-usa.com/cdn/shop/files/Badee-Al-Oud-Noble-Blush-1_efc7268e-6d5c-413d-ae1e-ef7c9873bb6e.png?v=1747415567&amp;width=1070 1070w, //www.lattafa-usa.com/cdn/shop/files/Badee-Al-Oud-Noble-Blush-1_efc7268e-6d5c-413d-ae1e-ef7c9873bb6e.png?v=1747415567&amp;width=1420 1420w, //www.lattafa-usa.com/cdn/shop/files/Badee-Al-Oud-Noble-Blush-1_efc7268e-6d5c-413d-ae1e-ef7c9873bb6e.png?v=1747415567&amp;width=1500 1500w"
-                                    width="1500" height="1500" loading="lazy" fetchpriority="low" class="motion-reduce"
-                                    sizes="(max-width: 767px) calc((100vw - 38px) / 2),
-(max-width: 1279px) calc((100vw - 90px) / 3),calc(1410px / 4)" is="image-lazy">
-                                </div>
-                                <div
-                                  class="media-wrapper product-card__image product-card__image--second inset-full hidden md:block"
-                                  style="--aspect-ratio: 1.0"><img
-                                    src="//www.lattafa-usa.com/cdn/shop/files/Badee-Al-Oud-Noble-Blush-2_b437e68d-7b3e-4489-a0f2-7439c9a6977a.png?v=1747415567&amp;width=1500"
-                                    alt="Badee Al Oud Noble Blush"
-                                    srcset="//www.lattafa-usa.com/cdn/shop/files/Badee-Al-Oud-Noble-Blush-2_b437e68d-7b3e-4489-a0f2-7439c9a6977a.png?v=1747415567&amp;width=70 70w, //www.lattafa-usa.com/cdn/shop/files/Badee-Al-Oud-Noble-Blush-2_b437e68d-7b3e-4489-a0f2-7439c9a6977a.png?v=1747415567&amp;width=140 140w, //www.lattafa-usa.com/cdn/shop/files/Badee-Al-Oud-Noble-Blush-2_b437e68d-7b3e-4489-a0f2-7439c9a6977a.png?v=1747415567&amp;width=165 165w, //www.lattafa-usa.com/cdn/shop/files/Badee-Al-Oud-Noble-Blush-2_b437e68d-7b3e-4489-a0f2-7439c9a6977a.png?v=1747415567&amp;width=355 355w, //www.lattafa-usa.com/cdn/shop/files/Badee-Al-Oud-Noble-Blush-2_b437e68d-7b3e-4489-a0f2-7439c9a6977a.png?v=1747415567&amp;width=450 450w, //www.lattafa-usa.com/cdn/shop/files/Badee-Al-Oud-Noble-Blush-2_b437e68d-7b3e-4489-a0f2-7439c9a6977a.png?v=1747415567&amp;width=535 535w, //www.lattafa-usa.com/cdn/shop/files/Badee-Al-Oud-Noble-Blush-2_b437e68d-7b3e-4489-a0f2-7439c9a6977a.png?v=1747415567&amp;width=710 710w, //www.lattafa-usa.com/cdn/shop/files/Badee-Al-Oud-Noble-Blush-2_b437e68d-7b3e-4489-a0f2-7439c9a6977a.png?v=1747415567&amp;width=900 900w, //www.lattafa-usa.com/cdn/shop/files/Badee-Al-Oud-Noble-Blush-2_b437e68d-7b3e-4489-a0f2-7439c9a6977a.png?v=1747415567&amp;width=1070 1070w, //www.lattafa-usa.com/cdn/shop/files/Badee-Al-Oud-Noble-Blush-2_b437e68d-7b3e-4489-a0f2-7439c9a6977a.png?v=1747415567&amp;width=1420 1420w, //www.lattafa-usa.com/cdn/shop/files/Badee-Al-Oud-Noble-Blush-2_b437e68d-7b3e-4489-a0f2-7439c9a6977a.png?v=1747415567&amp;width=1500 1500w"
-                                    width="1500" height="1500" loading="lazy" class="motion-reduce" sizes="(max-width: 767px) calc((100vw - 38px) / 2),
-(max-width: 1279px) calc((100vw - 90px) / 3),calc(1410px / 4)" is="image-lazy">
-                                </div>
-                              </motion-element>
-                            </a><button class="product-card__quickview btn btn--icon-circle btn--primary no-js-hidden"
-                              aria-label="Quick view"
-                              aria-controls="QuickView-9055154340063-template--20292988403935__product-grid"
-                              aria-haspopup="dialog">
-                              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
-                                role="presentation" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                                class="icon icon-magnifying-glass icon--large">
-                                <path
-                                  d="M10.875 18.75C15.2242 18.75 18.75 15.2242 18.75 10.875C18.75 6.52576 15.2242 3 10.875 3C6.52576 3 3 6.52576 3 10.875C3 15.2242 6.52576 18.75 10.875 18.75Z" />
-                                <path d="M16.4434 16.4453L20.9997 21.0016" />
-                              </svg>
-                            </button>
-                            <form method="post" action="/cart/add"
-                              id="quick-add-template--20292988403935__product-grid9055154340063" accept-charset="UTF-8"
-                              class="product-card__actions product-card__main-actions" enctype="multipart/form-data"
-                              novalidate="novalidate" data-type="add-to-cart-form" is="product-form"><input
-                                type="hidden" name="form_type" value="product" /><input type="hidden" name="utf8"
-                                value="?" /><input type="hidden" name="id" value="46981612699871"
-                                class="product-variant-id">
-                              <button id="quick-add-template--20292988403935__product-grid9055154340063-submit"
-                                type="submit" name="add" aria-label="Add to cart"
-                                class="product-card__atc product-card__action-button btn btn--white">
-                                <span
-                                  class="product-card__atc-icon product-card__action-icon inline-flex md:hidden"><svg
-                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                    stroke-linecap="round" stroke-linejoin="round"
-                                    class="icon icon-shopping-bag icon--medium" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                      d="M19.575 6.75H4.425C4.24045 6.75087 4.06254 6.81891 3.92451 6.94141C3.78648 7.06391 3.69778 7.23249 3.675 7.41562L2.34375 19.4156C2.33191 19.5202 2.34221 19.6261 2.37396 19.7264C2.40572 19.8267 2.45823 19.9192 2.52808 19.9979C2.59794 20.0766 2.68357 20.1397 2.77941 20.1831C2.87525 20.2266 2.97916 20.2494 3.08438 20.25H20.9156C21.0209 20.2494 21.1248 20.2266 21.2206 20.1831C21.3164 20.1397 21.4021 20.0766 21.4719 19.9979C21.5418 19.9192 21.5943 19.8267 21.626 19.7264C21.6578 19.6261 21.6681 19.5202 21.6563 19.4156L20.325 7.41562C20.3022 7.23249 20.2135 7.06391 20.0755 6.94141C19.9375 6.81891 19.7596 6.75087 19.575 6.75V6.75Z" />
-                                    <path
-                                      d="M8.25 6.75C8.25 5.75544 8.64509 4.80161 9.34835 4.09835C10.0516 3.39509 11.0054 3 12 3C12.9946 3 13.9484 3.39509 14.6517 4.09835C15.3549 4.80161 15.75 5.75544 15.75 6.75" />
-                                  </svg></span>
-                                <span class="product-card__atc-text product-card__action-text">Add to cart</span>
-
-
-                                <div class="loading__spinner hidden">
-                                  <svg aria-hidden="true" focusable="false" class="spinner icon icon--extra-medium"
-                                    viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-                                    <circle class="path" fill="none" stroke-width="4" cx="33" cy="33" r="30"></circle>
-                                  </svg>
-                                </div>
-
-                              </button><input type="hidden" name="product-id" value="9055154340063" /><input
-                                type="hidden" name="section-id" value="template--20292988403935__product-grid" />
-                            </form>
-                          </div>
-                          <div class="product-card__info text-left">
-                            <p class="product-card__vendor text-sm m-0">
-                              <span class="visually-hidden">Vendor:</span>
-                              Lattafa
-                            </p>
-                            <h3 class="product-card__title text-pcard-title">
-                              <a class="reversed-link" href="/products/badee-al-oud-noble-blush.html">Badee Al Oud Noble
-                                Blush</a>
-                            </h3>
-
-                            <div class="
-    f-price f-price--left">
-                              <div class="f-price__regular"><span
-                                  class="visually-hidden visually-hidden--inline">Regular price</span>
-                                <span class="f-price-item f-price-item--regular">
-                                  $44.99 USD
-                                </span>
-                              </div>
-                              <div class="f-price__sale">
-                                <span class="visually-hidden visually-hidden--inline">Sale price</span>
-                                <span class="f-price-item f-price-item--sale">
-                                  $44.99 USD
-                                </span>
-                                <span class="visually-hidden visually-hidden--inline">Regular price</span>
-                                <span class="f-price-item f-price-item--regular">
-                                  <s>
-
-
-
-                                  </s>
-                                </span>
-                              </div>
-                              <div class="f-price__unit-wrapper hidden">
-                                <span class="visually-hidden">Unit price</span>
-                                <div class="f-price__unit"><span data-unit-price></span><span
-                                    aria-hidden="true">/</span><span class="visually-hidden">per&nbsp;</span><span
-                                    data-unit-price-base-unit></span></div>
-                              </div>
-
-
-                            </div>
-
-                          </div>
-                        </div>
-                        <quick-view-modal id="QuickView-9055154340063-template--20292988403935__product-grid"
-                          class="quick-view drawer drawer--right"
-                          data-product-url="/products/badee-al-oud-noble-blush.html" hidden>
-                          <link
-                            href="//www.lattafa-usa.com/cdn/shop/t/15/assets/section-main-product.css?v=11777017481214845271761071983"
-                            rel="stylesheet" type="text/css" media="all" />
-                          <link
-                            href="//www.lattafa-usa.com/cdn/shop/t/15/assets/component-deferred-media.css?v=73225175381633074481761072006"
-                            rel="stylesheet" type="text/css" media="all" />
-
-                          <link
-                            href="//www.lattafa-usa.com/cdn/shop/t/15/assets/component-product-variant-picker.css?v=165436528996422612571761071997"
-                            rel="stylesheet" type="text/css" media="all" />
-
-                          <div class="fixed-overlay"
-                            aria-controls="QuickView-9055154340063-template--20292988403935__product-grid"></div>
-                          <div class="drawer__inner">
-                            <button class="drawer__close-btn"
-                              aria-controls="QuickView-9055154340063-template--20292988403935__product-grid"
-                              aria-label="Close">
-                              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
-                                class="icon icon-close icon--medium" fill="none" viewBox="0 0 24 24">
-                                <path d="M18.75 5.13496L5.25 18.8544" stroke="currentColor" stroke-width="1.5"
-                                  stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M18.75 18.8544L5.25 5.13496" stroke="currentColor" stroke-width="1.5"
-                                  stroke-linecap="round" stroke-linejoin="round" />
-                              </svg>
-
-                            </button>
-
-                            <div class="loading__spinner hidden">
-                              <svg aria-hidden="true" focusable="false" class="spinner icon icon--extra-medium"
-                                viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-                                <circle class="path" fill="none" stroke-width="4" cx="33" cy="33" r="30"></circle>
-                              </svg>
-                            </div>
-                            <div class="drawer__body v-scrollable h-full quick-view__content"></div>
-                          </div>
-                        </quick-view-modal>
-
-                      </div>
-                    </div>
-                    <div class="f-column card">
+<div<div class="f-column card">
                       <div class="product-card product-card-style-standard">
                         <div class="product-card__wrapper h-full">
                           <div class="product-card__image-wrapper color-scheme-1 bg-none">
@@ -8905,39 +9952,13 @@
                               <a class="reversed-link" href="/products/asad-bourbon.html">Asad Bourbon</a>
                             </h3>
 
-                            <div class="
-    f-price f-price--left">
-                              <div class="f-price__regular"><span
-                                  class="visually-hidden visually-hidden--inline">Regular price</span>
-                                <span class="f-price-item f-price-item--regular">
-                                  $44.99 USD
-                                </span>
-                              </div>
-                              <div class="f-price__sale">
-                                <span class="visually-hidden visually-hidden--inline">Sale price</span>
-                                <span class="f-price-item f-price-item--sale">
-                                  $44.99 USD
-                                </span>
-                                <span class="visually-hidden visually-hidden--inline">Regular price</span>
-                                <span class="f-price-item f-price-item--regular">
-                                  <s>
-
-
-
-                                  </s>
-                                </span>
-                              </div>
-                              <div class="f-price__unit-wrapper hidden">
-                                <span class="visually-hidden">Unit price</span>
-                                <div class="f-price__unit"><span data-unit-price></span><span
-                                    aria-hidden="true">/</span><span class="visually-hidden">per&nbsp;</span><span
-                                    data-unit-price-base-unit></span></div>
-                              </div>
-
-
-                            </div>
-
-                          </div>
+                            <div class="f-price f-price--left">
+    <div class="product-price-container">
+        <span class="discount-badge">-38%</span>
+        <span class="price-new">$28.00</span>
+        <span class="price-old">$45.00</span>
+    </div>
+</div>                       </div>
                         </div>
                         <quick-view-modal id="QuickView-9055153684703-template--20292988403935__product-grid"
                           class="quick-view drawer drawer--right" data-product-url="/products/asad-bourbon.html" hidden>
@@ -8980,7 +10001,7 @@
 
                       </div>
                     </div>
-                    <div class="f-column card">
+<div<div class="f-column card">
                       <div class="product-card product-card-style-standard">
                         <div class="product-card__wrapper h-full">
                           <div class="product-card__image-wrapper color-scheme-1 bg-none">
@@ -9137,7 +10158,7 @@
 
                       </div>
                     </div>
-                    <div class="f-column card">
+<div<div class="f-column card">
                       <div class="product-card product-card-style-standard">
                         <div class="product-card__wrapper h-full">
                           <div class="product-card__image-wrapper color-scheme-1 bg-none">
@@ -9293,7 +10314,7 @@
 
                       </div>
                     </div>
-                    <div class="f-column card">
+<div<div class="f-column card">
                       <div class="product-card product-card-style-standard">
                         <div class="product-card__wrapper h-full">
                           <div class="product-card__image-wrapper color-scheme-1 bg-none">
@@ -9449,7 +10470,7 @@
 
                       </div>
                     </div>
-                    <div class="f-column card">
+<div<div class="f-column card">
                       <div class="product-card product-card-style-standard">
                         <div class="product-card__wrapper h-full">
                           <div class="product-card__image-wrapper color-scheme-1 bg-none">
@@ -9605,7 +10626,7 @@
 
                       </div>
                     </div>
-                    <div class="f-column card">
+<div<div class="f-column card">
                       <div class="product-card product-card-style-standard">
                         <div class="product-card__wrapper h-full">
                           <div class="product-card__image-wrapper color-scheme-1 bg-none">
@@ -9688,39 +10709,13 @@
                               <a class="reversed-link" href="/products/asad-zanzibar.html">Asad Zanzibar</a>
                             </h3>
 
-                            <div class="
-    f-price f-price--left f-price--on-sale ">
-                              <div class="f-price__regular"><span
-                                  class="visually-hidden visually-hidden--inline">Regular price</span>
-                                <span class="f-price-item f-price-item--regular">
-                                  $44.99 USD
-                                </span>
-                              </div>
-                              <div class="f-price__sale">
-                                <span class="visually-hidden visually-hidden--inline">Sale price</span>
-                                <span class="f-price-item f-price-item--sale">
-                                  $44.99 USD
-                                </span>
-                                <span class="visually-hidden visually-hidden--inline">Regular price</span>
-                                <span class="f-price-item f-price-item--regular">
-                                  <s>
-
-                                    $47.99 USD
-
-                                  </s>
-                                </span>
-                              </div>
-                              <div class="f-price__unit-wrapper hidden">
-                                <span class="visually-hidden">Unit price</span>
-                                <div class="f-price__unit"><span data-unit-price></span><span
-                                    aria-hidden="true">/</span><span class="visually-hidden">per&nbsp;</span><span
-                                    data-unit-price-base-unit></span></div>
-                              </div>
-
-
-                            </div>
-
-                          </div>
+                            <div class="f-price f-price--left">
+    <div class="product-price-container">
+        <span class="discount-badge">-38%</span>
+        <span class="price-new">$28.00</span>
+        <span class="price-old">$45.00</span>
+    </div>
+</div>                       </div>
                         </div>
                         <quick-view-modal id="QuickView-9055153783007-template--20292988403935__product-grid"
                           class="quick-view drawer drawer--right" data-product-url="/products/asad-zanzibar.html"
@@ -9764,7 +10759,7 @@
 
                       </div>
                     </div>
-                    <div class="f-column card">
+<div<div class="f-column card">
                       <div class="product-card product-card-style-standard">
                         <div class="product-card__wrapper h-full">
                           <div class="product-card__image-wrapper color-scheme-1 bg-none">
@@ -10067,7 +11062,7 @@
                     </summary>
                     <ul class="accordion-details__content linklist linklist--vertical list-unstyled">
                       <li>
-                        <a href="/collections/all" class="reversed-link">
+                        <a href="/shop-all.html" class="reversed-link">
                           All Fragrances
                         </a>
                       </li>
@@ -10744,7 +11739,7 @@
   </div>
 
   <!-- BEGIN sections: overlay-group -->
-<!-- Cart Drawer Removed via Script -->
+  <!-- Cart Drawer Removed via Script -->
   <div id="shopify-section-sections--20292988698847__search-drawer"
     class="shopify-section shopify-section-group-overlay-group">
     <link rel="stylesheet" href="//www.lattafa-usa.com/cdn/shop/t/15/assets/search.css?v=94606528337522958341761071990"

@@ -134,7 +134,7 @@
             color: #000;
         }
     </style>
-<link rel="stylesheet" href="/css/adapter.css">
+    <link rel="stylesheet" href="/css/adapter.css">
 </head>
 
 <body>
@@ -162,30 +162,37 @@
                     <div class="main-image">
                         <img id="mainImage" src="/assets/products/vanilla-freak/0.jpg" alt="Vanilla Freak">
                     </div>
-                    <div class="thumbnails">
-                        <div class='thumbnail active' onclick='changeImage("/assets/products/vanilla-freak/0.jpg", this)'><img src='/assets/products/vanilla-freak/0.jpg' alt='Vanilla Freak'></div><div class='thumbnail ' onclick='changeImage("/assets/products/vanilla-freak/1.jpg", this)'><img src='/assets/products/vanilla-freak/1.jpg' alt='Vanilla Freak'></div><div class='thumbnail ' onclick='changeImage("/assets/products/vanilla-freak/2.jpg", this)'><img src='/assets/products/vanilla-freak/2.jpg' alt='Vanilla Freak'></div>
+                    <div class="thumbnails"><div class="thumbnail active" onclick='changeImage("/assets/products/vanilla-freak/0.jpg", this)'><img src="/assets/products/vanilla-freak/0.jpg" alt="Vanilla Freak"></div><div class="thumbnail" onclick='changeImage("/assets/products/vanilla-freak/1.jpg", this)'><img src="/assets/products/vanilla-freak/1.jpg" alt="Vanilla Freak"></div><div class="thumbnail" onclick='changeImage("/assets/products/vanilla-freak/2.jpg", this)'><img src="/assets/products/vanilla-freak/2.jpg" alt="Vanilla Freak"></div></div>
+                        <div class='thumbnail ' onclick='changeImage("/assets/products/vanilla-freak/1.jpg", this)'><img
+                                src='/assets/products/vanilla-freak/1.jpg' alt='Vanilla Freak'></div>
                     </div>
                 </div>
 
                 <div class="product-info">
                     <h1 class="product__title">Vanilla Freak</h1>
 
-                    <div class="product-price">
-                        <span class="price-regular">$59.99 USD</span>
+                    <div class="product-price-container">
+                        <span class="discount-badge">-24%</span>
+                        <span class="price-new">$59.00</span>
+                        <span class="price-old">$59.00</span>
+                        <span class="price-info-icon" title="Info">ⓘ</span>
                     </div>
 
                     <div class="product-description">
-                        <div class="descnew">Vanilla Freak from Lattafa's Gourmand Collection is a captivating Eau de Parfum offered in a 75ml spray. Expertly crafted, this fragrance blends rich vanilla notes with sweet, gourmand accords to create a warm and inviting scent. Perfect for those seeking a sophisticated yet indulgent aroma, Vanilla Freak radiates comfort and elegance throughout the day. Its long-lasting formula ensures you stay enveloped in its luscious fragrance from morning until night.</div>
-<div class="notesfinal">
-<strong>Top notes:</strong> Cupcake accord</div>
-<div class="notesfinal">
-<strong>Middle Notes:</strong> Cinnamon, Almond, Sugar Frosting</div>
-<div class="notesfinal">
-<strong>Base Notes: </strong>Vanilla, Musk, Butter cream</div>
-                    </div>
+                        <div class="descnew"><p>Lattafa Vanilla Freak is a captivating and unapologetically decadent gourmand fragrance that aims to take vanilla to its most indulgent extremes.</p></div>
+                        
+                        <div class="notesfinal">
+                            <p><strong>Top Notes</strong><br>Cupcake Accord</p>
+                        </div>
+                        <div class="notesfinal">
+                            <p><strong>Middle Notes</strong><br>Almond, Sugar Frosting, Cinnamon</p>
+                        </div>
+                        <div class="notesfinal">
+                            <p><strong>Base Notes</strong><br>Vanilla, Musk, Buttercream</p>
+                        </div></div>
 
                     <form action="/cart/add" method="post">
-                        <input type="hidden" name="id" value="47376554655967">
+                        <input type="hidden" name="id" value="46981611356383">
                         <button type="submit" class="add-to-cart-btn">Add to Cart</button>
                     </form>
                 </div>
@@ -208,9 +215,8 @@
             element.classList.add('active');
         }
     </script>
-<script src="/js/lattafa_adapter.js"></script>
-<script src="../js/lattafa_search.js"></script>
+    <script src="/js/lattafa_adapter.js"></script>
+    <script src="../js/lattafa_search.js"></script>
 </body>
 
 </html>
-

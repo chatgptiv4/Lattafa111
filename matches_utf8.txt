@@ -1,0 +1,54 @@
+MATCH: Asad at line 3734
+  PRICE_LINE_INDEX: 3770
+  PRICE_VALUE: From $14.99 USD
+MATCH: Asad at line 3762
+  PRICE_LINE_INDEX: 3770
+  PRICE_VALUE: From $14.99 USD
+MATCH: Khamrah at line 3806
+  PRICE_LINE_INDEX: 3842
+  PRICE_VALUE: $49.99 USD
+MATCH: Khamrah at line 3834
+  PRICE_LINE_INDEX: 3842
+  PRICE_VALUE: $49.99 USD
+MATCH: Badee Al Oud at line 3878
+  PRICE_LINE_INDEX: 3917
+  PRICE_VALUE: $44.99 USD
+MATCH: Badee Al Oud at line 3907
+  PRICE_LINE_INDEX: 3917
+  PRICE_VALUE: $44.99 USD
+MATCH: Asad at line 4317
+  Price not found in next 100 lines.
+MATCH: Asad at line 4920
+  PRICE_LINE_INDEX: 4956
+  PRICE_VALUE: From $14.99 USD
+MATCH: Asad at line 4948
+  PRICE_LINE_INDEX: 4956
+  PRICE_VALUE: From $14.99 USD
+MATCH: Khamrah at line 4992
+  PRICE_LINE_INDEX: 5028
+  PRICE_VALUE: $49.99 USD
+MATCH: Khamrah at line 5020
+  PRICE_LINE_INDEX: 5028
+  PRICE_VALUE: $49.99 USD
+MATCH: Badee Al Oud at line 5064
+  PRICE_LINE_INDEX: 5103
+  PRICE_VALUE: $44.99 USD
+MATCH: Badee Al Oud at line 5093
+  PRICE_LINE_INDEX: 5103
+  PRICE_VALUE: $44.99 USD
+MATCH: Asad at line 5497
+  Price not found in next 100 lines.
+MATCH: Badee Al Oud at line 8672
+  PRICE_LINE_INDEX: 8756
+  PRICE_VALUE: $44.99 USD
+MATCH: Badee Al Oud at line 8747
+  PRICE_LINE_INDEX: 8756
+  PRICE_VALUE: $44.99 USD
+MATCH: Badee Al Oud at line 8787
+  Price not found in next 100 lines.
+MATCH: Yara at line 12095
+  Price not found in next 100 lines.
+MATCH: Qaed Al Fursan at line 12095
+  Price not found in next 100 lines.
+MATCH: Badee Al Oud at line 12095
+  Price not found in next 100 lines.

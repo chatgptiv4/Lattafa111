@@ -134,7 +134,7 @@
             color: #000;
         }
     </style>
-<link rel="stylesheet" href="/css/adapter.css">
+    <link rel="stylesheet" href="/css/adapter.css">
 </head>
 
 <body>
@@ -162,30 +162,37 @@
                     <div class="main-image">
                         <img id="mainImage" src="/assets/products/choco-overdose/0.jpg" alt="Choco Overdose">
                     </div>
-                    <div class="thumbnails">
-                        <div class='thumbnail active' onclick='changeImage("/assets/products/choco-overdose/0.jpg", this)'><img src='/assets/products/choco-overdose/0.jpg' alt='Choco Overdose'></div><div class='thumbnail ' onclick='changeImage("/assets/products/choco-overdose/1.jpg", this)'><img src='/assets/products/choco-overdose/1.jpg' alt='Choco Overdose'></div><div class='thumbnail ' onclick='changeImage("/assets/products/choco-overdose/2.jpg", this)'><img src='/assets/products/choco-overdose/2.jpg' alt='Choco Overdose'></div>
+                    <div class="thumbnails"><div class="thumbnail active" onclick='changeImage("/assets/products/choco-overdose/0.jpg", this)'><img src="/assets/products/choco-overdose/0.jpg" alt="Choco Overdose"></div><div class="thumbnail" onclick='changeImage("/assets/products/choco-overdose/1.jpg", this)'><img src="/assets/products/choco-overdose/1.jpg" alt="Choco Overdose"></div><div class="thumbnail" onclick='changeImage("/assets/products/choco-overdose/2.jpg", this)'><img src="/assets/products/choco-overdose/2.jpg" alt="Choco Overdose"></div><div class="thumbnail" onclick='changeImage("/assets/products/choco-overdose/3.jpg", this)'><img src="/assets/products/choco-overdose/3.jpg" alt="Choco Overdose"></div><div class="thumbnail" onclick='changeImage("/assets/products/choco-overdose/4.jpg", this)'><img src="/assets/products/choco-overdose/4.jpg" alt="Choco Overdose"></div></div>
+                        <div class='thumbnail ' onclick='changeImage("/assets/products/choco-overdose/1.jpg", this)'><img
+                                src='/assets/products/choco-overdose/1.jpg' alt='Choco Overdose'></div>
                     </div>
                 </div>
 
                 <div class="product-info">
                     <h1 class="product__title">Choco Overdose</h1>
 
-                    <div class="product-price">
-                        <span class="price-regular">$59.99 USD</span>
+                    <div class="product-price-container">
+                        <span class="discount-badge">-24%</span>
+                        <span class="price-new">$59.00</span>
+                        <span class="price-old">$59.00</span>
+                        <span class="price-info-icon" title="Info">ⓘ</span>
                     </div>
 
                     <div class="product-description">
-                        <p><meta charset="utf-8">Choco Overdose from Lattafas Give Me Gourmand Collection is an exquisite 75ml eau de parfum spray crafted for those who appreciate bold, sweet scents. This fragrance layers rich, decadent chocolate notes with subtle hints that create a lasting gourmand experience. Perfect for evening wear or special occasions, it delivers a sophisticated aroma that captivates without overwhelming. Its expertly balanced composition ensures a comforting yet indulgent scent that evolves beautifully over time.</p>
-<div class="notesfinal">
-<strong>Top Notes:</strong> Dark Chocolate Fudge</div>
-<div class="notesfinal">
-<strong>Middle Notes:</strong> Cocoa Powder, Cupcake accord</div>
-<div class="notesfinal">
-<strong>Base Notes:</strong> Vanilla, Caramel, Benzoin</div>
-                    </div>
+                        <div class="descnew"><p>Lattafa Choco Overdose is a decadent fragrance from the 'Give Me Gourmand Collection'. A wearable dessert fantasy capturing the aroma of molten chocolate and freshly baked cupcakes.</p></div>
+                        
+                        <div class="notesfinal">
+                            <p><strong>Top Notes</strong><br>Dark Chocolate Fudge</p>
+                        </div>
+                        <div class="notesfinal">
+                            <p><strong>Middle Notes</strong><br>Cocoa Powder, Cupcake Accord</p>
+                        </div>
+                        <div class="notesfinal">
+                            <p><strong>Base Notes</strong><br>Vanilla, Caramel, Benzoin</p>
+                        </div></div>
 
                     <form action="/cart/add" method="post">
-                        <input type="hidden" name="id" value="47376546201823">
+                        <input type="hidden" name="id" value="46981611356383">
                         <button type="submit" class="add-to-cart-btn">Add to Cart</button>
                     </form>
                 </div>
@@ -208,9 +215,8 @@
             element.classList.add('active');
         }
     </script>
-<script src="/js/lattafa_adapter.js"></script>
-<script src="../js/lattafa_search.js"></script>
+    <script src="/js/lattafa_adapter.js"></script>
+    <script src="../js/lattafa_search.js"></script>
 </body>
 
 </html>
-

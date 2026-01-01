@@ -640,6 +640,40 @@ img {
     }
 
     /* Top Bar */
+    /* New Price Display Style */
+    .product-price-container {
+        display: flex;
+        align-items: baseline;
+        gap: 8px;
+        font-family: 'Inter', sans-serif;
+        margin-bottom: 20px;
+    }
+
+    .discount-badge {
+        color: red;
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+
+    .price-new {
+        color: #000;
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+
+    .price-old {
+        color: #888;
+        text-decoration: line-through;
+        font-size: 1.1rem;
+    }
+
+    .price-info-icon {
+        color: #888;
+        font-size: 1rem;
+        cursor: pointer;
+        margin-left: 5px;
+    }
+
     .top-bar {
         background-color: var(--secondary-color);
         color: var(--white);
