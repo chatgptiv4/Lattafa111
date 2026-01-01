@@ -258,9 +258,20 @@ document.addEventListener('DOMContentLoaded', () => {
         "cookie crave", "whipped pleasure"
     ];
 
+    const EXCLUDED_VARIANTS = [
+        "tous", "moi", "candy", "zanzibar", "unlimited", "untamed", "qahwa", "dukhan", "sublime", "amethyst", "honor & glory"
+    ];
+
     function isSoldOut(name) {
         if (!name) return true;
         const lowerName = name.toLowerCase();
+
+        // 1. Check for Excluded Variants (Blacklist)
+        if (EXCLUDED_VARIANTS.some(variant => lowerName.includes(variant))) {
+            return true; // Sold Out
+        }
+
+        // 2. Check for Priority Products (Whitelist)
         // Return TRUE (Sold Out) if the name does NOT contain any of the priority keywords
         return !PRIORITY_PRODUCTS.some(keyword => lowerName.includes(keyword));
     }
