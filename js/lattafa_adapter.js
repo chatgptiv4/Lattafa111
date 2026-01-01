@@ -242,10 +242,67 @@ document.addEventListener('DOMContentLoaded', () => {
     // Listen for any form submission that goes to /cart or /checkout
     document.addEventListener('submit', (e) => {
         const action = e.target.getAttribute('action');
-        if (action && (action.includes('/cart') || action.includes('/checkout'))) {
-            // Only hijack if it's a checkout-related submission (Shopify uses /cart for checkout too)
-            if (e.submitter && e.submitter.name === 'checkout' || e.target.querySelector('[name="checkout"]')) {
-                handleStripeCheckout(e);
+        if (action) {
+            // Hijack Checkout
+            if ((action.includes('/cart') || action.includes('/checkout'))) {
+                // Only hijack if it's a checkout-related submission (Shopify uses /cart for checkout too)
+                if (e.submitter && e.submitter.name === 'checkout' || e.target.querySelector('[name="checkout"]')) {
+                    handleStripeCheckout(e);
+                    return;
+                }
+            }
+
+            // Hijack Add To Cart (Native Forms) to use Local Cart
+            if (action.includes('/cart/add')) {
+                e.preventDefault();
+                e.stopPropagation();
+
+                // Get Product Info from Form Context
+                const form = e.target;
+                const card = form.closest('.product-card') || document.querySelector('.product-info');
+
+                if (!card) return;
+
+                // Extract Details
+                const titleEl = card.querySelector('.product-card__title a') ||
+                    card.querySelector('.product-card__title') ||
+                    card.querySelector('.h3 a') ||
+                    card.querySelector('h1') || // Product page title
+                    card.querySelector('h3');
+
+                const priceEl = card.querySelector('.price-new') ||
+                    card.querySelector('.f-price-item--sale') ||
+                    card.querySelector('.f-price-item--regular') ||
+                    card.querySelector('.price-item--regular') ||
+                    card.querySelector('.price__regular .price-item');
+
+                const imgEl = card.querySelector('img.motion-reduce') ||
+                    card.querySelector('img');
+
+                if (titleEl) {
+                    const title = titleEl.innerText.trim();
+
+                    // Double check sold out status just in case
+                    if (isSoldOut && isSoldOut(title)) {
+                        alert("This item is currently Sold Out.");
+                        return;
+                    }
+
+                    const priceStr = priceEl ? priceEl.innerText : "$0.00";
+                    const price = parseFloat(priceStr.replace(/[^0-9.]/g, '')) || 0;
+
+                    let imgSrc = imgEl ? imgEl.src : '';
+                    if (imgSrc.startsWith('//')) imgSrc = 'https:' + imgSrc;
+
+                    addToCart({
+                        id: title.replace(/\s+/g, '-').toLowerCase(),
+                        name: title,
+                        price: price,
+                        image: imgSrc,
+                        quantity: 1
+                    });
+                    toggleCart();
+                }
             }
         }
     }, true);
@@ -373,6 +430,67 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     }
+
+    // 5. Force Enable Native Buttons for Priority Products (Aggressive Override)
+    function forceEnablePriorityButtons() {
+        const products = document.querySelectorAll('.product-card');
+        products.forEach(card => {
+            const titleEl = card.querySelector('.product-card__title a') ||
+                card.querySelector('.product-card__title') ||
+                card.querySelector('.h3 a') ||
+                card.querySelector('h3');
+
+            if (!titleEl) return;
+            const title = titleEl.innerText.trim();
+
+            // Check if Priority
+            const isPriority = PRIORITY_PRODUCTS.some(keyword => title.toLowerCase().includes(keyword));
+
+            // Check exclusion for safety (e.g. Yara Candy vs Yara)
+            const isExcluded = EXCLUDED_VARIANTS.some(variant => title.toLowerCase().includes(variant));
+
+            if (isPriority && !isExcluded) {
+                // A. Find Native Button
+                const nativeBtn = card.querySelector('button[name="add"]');
+                const nativeTextSpan = card.querySelector('.product-card__atc-text');
+
+                if (nativeBtn) {
+                    // Force Enable
+                    if (nativeBtn.disabled || nativeBtn.getAttribute('disabled') === '' || nativeBtn.classList.contains('disabled')) {
+                        nativeBtn.disabled = false;
+                        nativeBtn.removeAttribute('disabled');
+                        nativeBtn.classList.remove('disabled');
+                    }
+
+                    // Force Text
+                    if (nativeTextSpan) {
+                        if (nativeTextSpan.innerText.trim().toUpperCase() === 'SOLD OUT') {
+                            nativeTextSpan.innerText = 'Add to Cart';
+                        }
+                    } else if (nativeBtn.innerText.includes('Sold Out')) {
+                        nativeBtn.innerText = 'Add to Cart';
+                    }
+                }
+
+                // B. Find Injected Button (The one under the image)
+                const injectedBtn = card.querySelector('.btn-lattafa-add');
+                if (injectedBtn) {
+                    if (injectedBtn.disabled || injectedBtn.innerText === 'Sold Out') {
+                        injectedBtn.disabled = false;
+                        injectedBtn.innerText = 'Add to Cart';
+                        // Reset styles to match active state (black bg)
+                        injectedBtn.style.backgroundColor = '';
+                        injectedBtn.style.cursor = '';
+                        injectedBtn.style.opacity = '';
+                    }
+                }
+            }
+        });
+    }
+
+    // Run force enable periodically
+    setInterval(forceEnablePriorityButtons, 1000);
+    window.addEventListener('load', forceEnablePriorityButtons);
 
     // Initial injection
     injectAddToCartButtons();
